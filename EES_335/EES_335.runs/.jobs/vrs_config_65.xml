@@ -1,5 +1,0 @@
-<?xml version="1.0"?>
-<Runs Version="1" Minor="0">
-	<Run Id="EES_335_auto_pc_2_synth_1" LaunchDir="E:/EES_Board/EES_335/EES_335.runs/EES_335_auto_pc_2_synth_1" FlowId="Vivado_Synthesis" FromStepId="vivado" ToStepId="vivado"/>
-</Runs>
-
