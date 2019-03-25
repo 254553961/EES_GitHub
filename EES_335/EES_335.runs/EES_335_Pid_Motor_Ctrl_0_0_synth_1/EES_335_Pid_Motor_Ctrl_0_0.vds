@@ -1,0 +1,676 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Jan 12 14:37:26 2019
+# Process ID: 9048
+# Current directory: E:/EES_Board/EES_335/EES_335.runs/EES_335_Pid_Motor_Ctrl_0_0_synth_1
+# Command line: vivado.exe -log EES_335_Pid_Motor_Ctrl_0_0.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source EES_335_Pid_Motor_Ctrl_0_0.tcl
+# Log file: E:/EES_Board/EES_335/EES_335.runs/EES_335_Pid_Motor_Ctrl_0_0_synth_1/EES_335_Pid_Motor_Ctrl_0_0.vds
+# Journal file: E:/EES_Board/EES_335/EES_335.runs/EES_335_Pid_Motor_Ctrl_0_0_synth_1\vivado.jou
+#-----------------------------------------------------------
+source EES_335_Pid_Motor_Ctrl_0_0.tcl -notrace
+Command: synth_design -top EES_335_Pid_Motor_Ctrl_0_0 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 9784 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 384.570 ; gain = 100.809
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'EES_335_Pid_Motor_Ctrl_0_0' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/synth/EES_335_Pid_Motor_Ctrl_0_0.v:56]
+INFO: [Synth 8-638] synthesizing module 'Motor_Ctrl_v1_1' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1.v:4]
+	Parameter CLK_FREQUENCY bound to: 8'b01100100 
+	Parameter PWM_PERIOD bound to: 16'b0000011111100000 
+	Parameter SPEED_CTRL_PERIOD bound to: 16'b0000000000011001 
+	Parameter C_Motor_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_Motor_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'Motor_Ctrl_v1_1_Motor_S_AXI' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1_Motor_S_AXI.v:4]
+	Parameter CLK_FREQUENCY bound to: 8'b01100100 
+	Parameter PWM_PERIOD bound to: 16'b0000011111100000 
+	Parameter SPEED_CTRL_PERIOD bound to: 16'b0000000000011001 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 6 - type: integer 
+	Parameter ADDR_LSB bound to: 2 - type: integer 
+	Parameter OPT_MEM_ADDR_BITS bound to: 3 - type: integer 
+INFO: [Synth 8-226] default block is never used [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1_Motor_S_AXI.v:517]
+INFO: [Synth 8-638] synthesizing module 'Motor_Controller' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Controller.v:21]
+	Parameter CLK_FREQUENCY bound to: 8'b01100100 
+	Parameter PWM_PERIOD bound to: 16'b0000011111100000 
+	Parameter SPEED_CTRL_PERIOD bound to: 16'b0000000000011001 
+	Parameter WIDTH bound to: 8'b00010000 
+	Parameter INT_WIDTH bound to: 8'b00100000 
+	Parameter STATE0 bound to: 2'b00 
+	Parameter STATE1 bound to: 2'b01 
+	Parameter STATE2 bound to: 2'b10 
+	Parameter STATE3 bound to: 2'b11 
+INFO: [Synth 8-638] synthesizing module 'PWM_Generator' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/PWM_Generator.v:21]
+	Parameter CLK_FREQUENCY bound to: 8'b01100100 
+	Parameter PWM_PERIOD bound to: 16'b0000011111100000 
+	Parameter TIMER_1US_CONTER bound to: 49 - type: integer 
+	Parameter PWM_PERIOD_CONTER bound to: 2015 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'PWM_Generator' (1#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/PWM_Generator.v:21]
+INFO: [Synth 8-638] synthesizing module 'encoder' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/encoder.v:23]
+	Parameter DUAL_CH_EN bound to: 1'b1 
+	Parameter State0 bound to: 2'b00 
+	Parameter State1 bound to: 2'b01 
+	Parameter State2 bound to: 2'b11 
+	Parameter State3 bound to: 2'b10 
+INFO: [Synth 8-256] done synthesizing module 'encoder' (2#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/encoder.v:23]
+INFO: [Synth 8-638] synthesizing module 'PID_CONTOR_0' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/synth/PID_CONTOR_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'PID_CONTOR' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:12]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_state3 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state4 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:58]
+INFO: [Synth 8-5534] Detected attribute (* use_dsp48 = "no" *) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:92]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-638] synthesizing module 'PID_CONTOR_mac_mubkb' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR_mac_mubkb.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 16 - type: integer 
+	Parameter din1_WIDTH bound to: 16 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'PID_CONTOR_mac_mubkb_DSP48_0' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR_mac_mubkb.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PID_CONTOR_mac_mubkb_DSP48_0' (3#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR_mac_mubkb.v:10]
+INFO: [Synth 8-256] done synthesizing module 'PID_CONTOR_mac_mubkb' (4#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR_mac_mubkb.v:34]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:304]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:334]
+INFO: [Synth 8-256] done synthesizing module 'PID_CONTOR' (5#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:12]
+INFO: [Synth 8-256] done synthesizing module 'PID_CONTOR_0' (6#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/synth/PID_CONTOR_0.v:57]
+INFO: [Synth 8-256] done synthesizing module 'Motor_Controller' (7#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Controller.v:21]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg7_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1_Motor_S_AXI.v:252]
+WARNING: [Synth 8-6014] Unused sequential element slv_reg8_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1_Motor_S_AXI.v:253]
+WARNING: [Synth 8-3848] Net reg_err in module/entity Motor_Ctrl_v1_1_Motor_S_AXI does not have driver. [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1_Motor_S_AXI.v:99]
+WARNING: [Synth 8-3848] Net reg_pid_start in module/entity Motor_Ctrl_v1_1_Motor_S_AXI does not have driver. [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1_Motor_S_AXI.v:100]
+INFO: [Synth 8-256] done synthesizing module 'Motor_Ctrl_v1_1_Motor_S_AXI' (8#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1_Motor_S_AXI.v:4]
+INFO: [Synth 8-256] done synthesizing module 'Motor_Ctrl_v1_1' (9#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Ctrl_v1_1.v:4]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_Pid_Motor_Ctrl_0_0' (10#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/synth/EES_335_Pid_Motor_Ctrl_0_0.v:56]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[31]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[30]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[29]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[28]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[27]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[26]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[25]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[24]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[23]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[22]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[21]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[20]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[19]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[18]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[17]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[16]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[15]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[14]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[13]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[12]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[11]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[10]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[9]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[8]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[7]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[6]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[5]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[4]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[3]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[2]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[1]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[0]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_ARPROT[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 437.074 ; gain = 153.313
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:07 . Memory (MB): peak = 437.074 ; gain = 153.313
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [E:/EES_Board/EES_335/EES_335.runs/EES_335_Pid_Motor_Ctrl_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/EES_Board/EES_335/EES_335.runs/EES_335_Pid_Motor_Ctrl_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.030 . Memory (MB): peak = 768.734 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 768.734 ; gain = 484.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 768.734 ; gain = 484.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/Motor_Controller_inst0/PID. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:19 . Memory (MB): peak = 768.734 ; gain = 484.973
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-6014] Unused sequential element timer_cnter_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/PWM_Generator.v:47]
+WARNING: [Synth 8-6014] Unused sequential element count_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/PWM_Generator.v:69]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/encoder.v:92]
+INFO: [Synth 8-5546] ROM "upOf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "downOf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element SumError_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:180]
+WARNING: [Synth 8-6014] Unused sequential element reg_speed_ctrl_period_cnter_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Controller.v:141]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:20 . Memory (MB): peak = 768.734 ; gain = 484.973
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
+	   2 Input     16 Bit       Adders := 1     
+	   3 Input     16 Bit       Adders := 1     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   4 Input      1 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 20    
+	               16 Bit    Registers := 7     
+	                8 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                4 Bit    Registers := 1     
+	                2 Bit    Registers := 6     
+	                1 Bit    Registers := 15    
++---Multipliers : 
+	                16x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	  16 Input     32 Bit        Muxes := 13    
+	   2 Input     19 Bit        Muxes := 1     
+	   4 Input     16 Bit        Muxes := 2     
+	   2 Input     16 Bit        Muxes := 2     
+	   5 Input      4 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   6 Input      2 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 17    
+	   4 Input      1 Bit        Muxes := 11    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module PWM_Generator 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      8 Bit       Adders := 1     
++---Registers : 
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 1     
+Module encoder 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     16 Bit       Adders := 1     
++---XORs : 
+	   4 Input      1 Bit         XORs := 1     
++---Registers : 
+	               16 Bit    Registers := 1     
+	                2 Bit    Registers := 3     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   3 Input      2 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 5     
+	   6 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+	   4 Input      1 Bit        Muxes := 3     
+Module PID_CONTOR 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     32 Bit       Adders := 2     
+	   2 Input     19 Bit       Adders := 1     
++---XORs : 
+	   2 Input      8 Bit         XORs := 1     
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 5     
+	               16 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
++---Multipliers : 
+	                16x32  Multipliers := 2     
++---Muxes : 
+	   2 Input     19 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 4     
+Module Motor_Controller 
+Detailed RTL Component Info : 
++---Adders : 
+	   3 Input     16 Bit       Adders := 1     
++---Registers : 
+	               16 Bit    Registers := 3     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     16 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   5 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 2     
+	   4 Input      1 Bit        Muxes := 8     
+Module Motor_Ctrl_v1_1_Motor_S_AXI 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 15    
+	                6 Bit    Registers := 2     
+	                2 Bit    Registers := 2     
+	                1 Bit    Registers := 5     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 13    
+	  16 Input     32 Bit        Muxes := 13    
+	   2 Input      1 Bit        Muxes := 4     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:346]
+INFO: [Synth 8-5845] Not enough pipeline registers after wide multiplier. Recommended levels of pipeline registers is 2 [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:342]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmp_8_reg_300_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:190]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmp_6_reg_295_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:189]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmp_reg_275_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:183]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmp_2_reg_285_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:182]
+WARNING: [Synth 8-6014] Unused sequential element inst/tmp_1_reg_280_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:181]
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:346]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element  was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:342]
+WARNING: [Synth 8-6014] Unused sequential element  was removed. 
+WARNING: [Synth 8-6014] Unused sequential element inst/SumError_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_Pid_Motor_Ctrl_0_0/src/PID_CONTOR_0_1/hdl/verilog/PID_CONTOR.v:180]
+DSP Report: Generating DSP inst/tmp_8_fu_172_p2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP inst/tmp_8_fu_172_p2.
+DSP Report: operator inst/tmp_8_fu_172_p2 is absorbed into DSP inst/tmp_8_fu_172_p2.
+DSP Report: operator inst/tmp_8_fu_172_p2 is absorbed into DSP inst/tmp_8_fu_172_p2.
+DSP Report: Generating DSP inst/tmp_8_reg_300_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP inst/tmp_8_reg_300_reg.
+DSP Report: register inst/tmp_8_reg_300_reg is absorbed into DSP inst/tmp_8_reg_300_reg.
+DSP Report: operator inst/tmp_8_fu_172_p2 is absorbed into DSP inst/tmp_8_reg_300_reg.
+DSP Report: operator inst/tmp_8_fu_172_p2 is absorbed into DSP inst/tmp_8_reg_300_reg.
+DSP Report: Generating DSP inst/tmp_6_fu_163_p2, operation Mode is: A2*B.
+DSP Report: register A is absorbed into DSP inst/tmp_6_fu_163_p2.
+DSP Report: operator inst/tmp_6_fu_163_p2 is absorbed into DSP inst/tmp_6_fu_163_p2.
+DSP Report: operator inst/tmp_6_fu_163_p2 is absorbed into DSP inst/tmp_6_fu_163_p2.
+DSP Report: Generating DSP inst/tmp_6_reg_295_reg, operation Mode is: (PCIN>>17)+A*B2.
+DSP Report: register B is absorbed into DSP inst/tmp_6_reg_295_reg.
+DSP Report: register inst/tmp_6_reg_295_reg is absorbed into DSP inst/tmp_6_reg_295_reg.
+DSP Report: operator inst/tmp_6_fu_163_p2 is absorbed into DSP inst/tmp_6_reg_295_reg.
+DSP Report: operator inst/tmp_6_fu_163_p2 is absorbed into DSP inst/tmp_6_reg_295_reg.
+DSP Report: Generating DSP inst/tmp_s_reg_305_reg, operation Mode is: (C+A*B2)'.
+DSP Report: register inst/tmp_reg_275_reg is absorbed into DSP inst/tmp_s_reg_305_reg.
+DSP Report: register inst/tmp_s_reg_305_reg is absorbed into DSP inst/tmp_s_reg_305_reg.
+DSP Report: operator inst/PID_CONTOR_mac_mubkb_U1/PID_CONTOR_mac_mubkb_DSP48_0_U/p is absorbed into DSP inst/tmp_s_reg_305_reg.
+DSP Report: operator inst/PID_CONTOR_mac_mubkb_U1/PID_CONTOR_mac_mubkb_DSP48_0_U/m is absorbed into DSP inst/tmp_s_reg_305_reg.
+INFO: [Synth 8-5546] ROM "encoder_inst0/downOf" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "encoder_inst0/upOf" won't be mapped to RAM because it is too sparse
+WARNING: [Synth 8-6014] Unused sequential element PWM_Generator_inst0/timer_cnter_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/PWM_Generator.v:47]
+WARNING: [Synth 8-6014] Unused sequential element PWM_Generator_inst0/count_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/PWM_Generator.v:69]
+WARNING: [Synth 8-6014] Unused sequential element reg_speed_ctrl_period_cnter_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/3f37/hdl/Motor_Controller.v:141]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[31]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[30]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[29]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[28]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[27]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[26]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[25]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[24]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[23]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[22]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[21]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[20]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[19]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[18]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[17]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[16]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[15]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[14]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[13]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[12]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[11]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[10]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[9]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[8]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[7]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[6]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[5]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[4]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[3]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[2]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[1]
+WARNING: [Synth 8-3331] design Motor_Controller has unconnected port Reserved[0]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_AWPROT[2]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_AWPROT[1]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_AWPROT[0]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_ARPROT[2]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_ARPROT[1]
+WARNING: [Synth 8-3331] design Motor_Ctrl_v1_1_Motor_S_AXI has unconnected port S_AXI_ARPROT[0]
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[15]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[16]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[17]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[18]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[19]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[20]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[21]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[22]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[23]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[24]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[25]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[26]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[27]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[28]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[29]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[30]' (FDR) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/slv_reg15_reg[31]'
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_rresp_reg[0]' (FDRE) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_rresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_rresp_reg[1] )
+INFO: [Synth 8-3886] merging instance 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_bresp_reg[0]' (FDRE) to 'inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_bresp_reg[1]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_bresp_reg[1] )
+INFO: [Synth 8-3332] Sequential element (inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_bresp_reg[1]) is unused and will be removed from module EES_335_Pid_Motor_Ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_awaddr_reg[1]) is unused and will be removed from module EES_335_Pid_Motor_Ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_awaddr_reg[0]) is unused and will be removed from module EES_335_Pid_Motor_Ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_araddr_reg[1]) is unused and will be removed from module EES_335_Pid_Motor_Ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_araddr_reg[0]) is unused and will be removed from module EES_335_Pid_Motor_Ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/Motor_Ctrl_v1_1_Motor_S_AXI_inst/axi_rresp_reg[1]) is unused and will be removed from module EES_335_Pid_Motor_Ctrl_0_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[47]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[46]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[45]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[44]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[43]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[42]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[41]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[40]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[39]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[38]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[37]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[36]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[35]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[34]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[33]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[32]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[31]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[30]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[29]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[28]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[27]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[26]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[25]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[24]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[23]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[22]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[21]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[20]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[19]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[18]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_8_reg_300_reg[17]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[47]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[46]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[45]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[44]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[43]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[42]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[41]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[40]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[39]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[38]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[37]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[36]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[35]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[34]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[33]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[32]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[31]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[30]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[29]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[28]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[27]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[26]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[25]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[24]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[23]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[22]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[21]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[20]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[19]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[18]) is unused and will be removed from module PID_CONTOR_0.
+INFO: [Synth 8-3332] Sequential element (inst/tmp_6_reg_295_reg[17]) is unused and will be removed from module PID_CONTOR_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:23 . Memory (MB): peak = 768.734 ; gain = 484.973
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name  | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|PID_CONTOR_0 | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|PID_CONTOR_0 | (PCIN>>17)+A*B2 | 16     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|PID_CONTOR_0 | A2*B            | 18     | 16     | -      | -      | 48     | 1    | 0    | -    | -    | -     | 0    | 0    | 
+|PID_CONTOR_0 | (PCIN>>17)+A*B2 | 16     | 15     | -      | -      | 48     | 0    | 1    | -    | -    | -     | 0    | 1    | 
+|PID_CONTOR_0 | (C+A*B2)'       | 16     | 16     | 32     | -      | 32     | 0    | 1    | 0    | -    | -     | 0    | 1    | 
++-------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 829.934 ; gain = 546.172
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:00:37 . Memory (MB): peak = 830.824 ; gain = 547.063
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:37 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    56|
+|2     |DSP48E1   |     2|
+|3     |DSP48E1_1 |     2|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |    26|
+|6     |LUT2      |   123|
+|7     |LUT3      |    58|
+|8     |LUT4      |   130|
+|9     |LUT5      |    75|
+|10    |LUT6      |   135|
+|11    |MUXF7     |    64|
+|12    |MUXF8     |    32|
+|13    |FDCE      |    19|
+|14    |FDRE      |   680|
+|15    |FDSE      |     2|
++------+----------+------+
+
+Report Instance Areas: 
++------+-------------------------------------+----------------------------+------+
+|      |Instance                             |Module                      |Cells |
++------+-------------------------------------+----------------------------+------+
+|1     |top                                  |                            |  1405|
+|2     |  inst                               |Motor_Ctrl_v1_1             |  1405|
+|3     |    Motor_Ctrl_v1_1_Motor_S_AXI_inst |Motor_Ctrl_v1_1_Motor_S_AXI |  1395|
+|4     |      Motor_Controller_inst0         |Motor_Controller            |   638|
+|5     |        PID                          |PID_CONTOR_0                |   369|
+|6     |          inst                       |PID_CONTOR                  |   369|
+|7     |        PWM_Generator_inst0          |PWM_Generator               |    76|
+|8     |        encoder_inst0                |encoder                     |    89|
++------+-------------------------------------+----------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 55 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:24 ; elapsed = 00:00:32 . Memory (MB): peak = 852.617 ; gain = 237.195
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 852.617 ; gain = 568.855
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 157 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+130 Infos, 100 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:39 ; elapsed = 00:00:41 . Memory (MB): peak = 852.617 ; gain = 580.328
+INFO: [Common 17-1381] The checkpoint 'E:/EES_Board/EES_335/EES_335.runs/EES_335_Pid_Motor_Ctrl_0_0_synth_1/EES_335_Pid_Motor_Ctrl_0_0.dcp' has been generated.
+WARNING: [Coretcl 2-1488] Problem adding IP cache entry: Directory already exists: e:/EES_Board/EES_335/EES_335.cache/ip/2017.4/c100caa96352c991
+INFO: [Coretcl 2-1174] Renamed 7 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/EES_Board/EES_335/EES_335.runs/EES_335_Pid_Motor_Ctrl_0_0_synth_1/EES_335_Pid_Motor_Ctrl_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file EES_335_Pid_Motor_Ctrl_0_0_utilization_synth.rpt -pb EES_335_Pid_Motor_Ctrl_0_0_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.025 . Memory (MB): peak = 852.617 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Sat Jan 12 14:38:14 2019...

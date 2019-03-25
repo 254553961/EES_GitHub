@@ -1,0 +1,1163 @@
+
+*** Running vivado
+    with args -log EES_335_hls_sobel_0_1.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source EES_335_hls_sobel_0_1.tcl
+
+
+****** Vivado v2017.4 (64-bit)
+  **** SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+  **** IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+source EES_335_hls_sobel_0_1.tcl -notrace
+Command: synth_design -top EES_335_hls_sobel_0_1 -part xc7z010clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z010'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8144 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 383.270 ; gain = 101.867
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'EES_335_hls_sobel_0_1' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_hls_sobel_0_1/synth/EES_335_hls_sobel_0_1.v:56]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_top' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_top.v:9]
+	Parameter RESET_ACTIVE_LOW bound to: 1 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hls_sobel' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel.v:12]
+INFO: [Synth 8-638] synthesizing module 'Block_Mat_exit7_proc' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Block_Mat_exit7_proc.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 1'b1 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Block_Mat_exit7_proc.v:89]
+INFO: [Synth 8-256] done synthesizing module 'Block_Mat_exit7_proc' (1#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Block_Mat_exit7_proc.v:10]
+INFO: [Synth 8-638] synthesizing module 'AXIvideo2Mat' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/AXIvideo2Mat.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 8'b00000001 
+	Parameter ap_ST_fsm_state2 bound to: 8'b00000010 
+	Parameter ap_ST_fsm_state3 bound to: 8'b00000100 
+	Parameter ap_ST_fsm_state4 bound to: 8'b00001000 
+	Parameter ap_ST_fsm_pp1_stage0 bound to: 8'b00010000 
+	Parameter ap_ST_fsm_state7 bound to: 8'b00100000 
+	Parameter ap_ST_fsm_state8 bound to: 8'b01000000 
+	Parameter ap_ST_fsm_state9 bound to: 8'b10000000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/AXIvideo2Mat.v:141]
+INFO: [Synth 8-256] done synthesizing module 'AXIvideo2Mat' (2#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/AXIvideo2Mat.v:10]
+INFO: [Synth 8-638] synthesizing module 'CvtColor' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/CvtColor.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state8 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/CvtColor.v:80]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_mul_mulbkb' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mul_mulbkb.v:14]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 22 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_mul_mulbkb_DSP48_0' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mul_mulbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_mul_mulbkb_DSP48_0' (3#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mul_mulbkb.v:4]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_mul_mulbkb' (4#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mul_mulbkb.v:14]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_mac_mulcud' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_mulcud.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 23 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 30 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_mac_mulcud_DSP48_1' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_mulcud.v:10]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_mac_mulcud_DSP48_1' (5#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_mulcud.v:10]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_mac_mulcud' (6#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_mulcud.v:34]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_mac_muldEe' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_muldEe.v:34]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 8 - type: integer 
+	Parameter din1_WIDTH bound to: 20 - type: integer 
+	Parameter din2_WIDTH bound to: 29 - type: integer 
+	Parameter dout_WIDTH bound to: 29 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_mac_muldEe_DSP48_2' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_muldEe.v:10]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_mac_muldEe_DSP48_2' (7#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_muldEe.v:10]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_mac_muldEe' (8#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_mac_muldEe.v:34]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/CvtColor.v:598]
+INFO: [Synth 8-256] done synthesizing module 'CvtColor' (9#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/CvtColor.v:10]
+INFO: [Synth 8-638] synthesizing module 'Threshold' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Threshold.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state6 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Threshold.v:66]
+WARNING: [Synth 8-589] replacing case/wildcard equality operator === with logical equality operator == [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Threshold.v:393]
+INFO: [Synth 8-256] done synthesizing module 'Threshold' (10#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Threshold.v:10]
+INFO: [Synth 8-638] synthesizing module 'Mat2AXIvideo' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Mat2AXIvideo.v:10]
+	Parameter ap_ST_fsm_state1 bound to: 4'b0001 
+	Parameter ap_ST_fsm_state2 bound to: 4'b0010 
+	Parameter ap_ST_fsm_pp0_stage0 bound to: 4'b0100 
+	Parameter ap_ST_fsm_state5 bound to: 4'b1000 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Mat2AXIvideo.v:101]
+INFO: [Synth 8-256] done synthesizing module 'Mat2AXIvideo' (11#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Mat2AXIvideo.v:10]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d1_A' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d1_A_shiftReg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d1_A_shiftReg' (12#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d1_A' (13#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d3_A' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d3_A_shiftReg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d3_A_shiftReg' (14#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d3_A' (15#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d4_A' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w32_d4_A_shiftReg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:11]
+	Parameter DATA_WIDTH bound to: 32 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d4_A_shiftReg' (16#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w32_d4_A' (17#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w8_d1_A.v:45]
+	Parameter MEM_STYLE bound to: auto - type: string 
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fifo_w8_d1_A_shiftReg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w8_d1_A.v:11]
+	Parameter DATA_WIDTH bound to: 8 - type: integer 
+	Parameter ADDR_WIDTH bound to: 1 - type: integer 
+	Parameter DEPTH bound to: 2 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A_shiftReg' (18#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w8_d1_A.v:11]
+INFO: [Synth 8-256] done synthesizing module 'fifo_w8_d1_A' (19#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w8_d1_A.v:45]
+INFO: [Synth 8-638] synthesizing module 'start_for_ThreshoeOg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'start_for_ThreshoeOg_shiftReg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 4 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_ThreshoeOg_shiftReg' (20#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:11]
+INFO: [Synth 8-256] done synthesizing module 'start_for_ThreshoeOg' (21#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:45]
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIfYi' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'start_for_Mat2AXIfYi_shiftReg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 3 - type: integer 
+	Parameter DEPTH bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIfYi_shiftReg' (22#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:11]
+INFO: [Synth 8-256] done synthesizing module 'start_for_Mat2AXIfYi' (23#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:45]
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColog8j' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_CvtColog8j.v:45]
+	Parameter MEM_STYLE bound to: shiftreg - type: string 
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'start_for_CvtColog8j_shiftReg' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_CvtColog8j.v:11]
+	Parameter DATA_WIDTH bound to: 1 - type: integer 
+	Parameter ADDR_WIDTH bound to: 2 - type: integer 
+	Parameter DEPTH bound to: 3 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColog8j_shiftReg' (24#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_CvtColog8j.v:11]
+INFO: [Synth 8-256] done synthesizing module 'start_for_CvtColog8j' (25#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_CvtColog8j.v:45]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel' (26#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel.v:12]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_INPUT_STREAM_if' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:11]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_INPUT_STREAM_reg_slice' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:300]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_INPUT_STREAM_reg_slice' (27#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:300]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_INPUT_STREAM_fifo' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:225]
+	Parameter DATA_BITS bound to: 24 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_INPUT_STREAM_fifo' (28#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:225]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_INPUT_STREAM_fifo__parameterized0' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:225]
+	Parameter DATA_BITS bound to: 3 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_INPUT_STREAM_fifo__parameterized0' (28#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:225]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_INPUT_STREAM_fifo__parameterized1' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:225]
+	Parameter DATA_BITS bound to: 1 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_INPUT_STREAM_fifo__parameterized1' (28#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:225]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_INPUT_STREAM_if' (29#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:11]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_OUTPUT_STREAM_if' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:11]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_OUTPUT_STREAM_reg_slice' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:300]
+	Parameter N bound to: 34 - type: integer 
+	Parameter ZERO bound to: 2'b10 
+	Parameter ONE bound to: 2'b11 
+	Parameter TWO bound to: 2'b01 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_OUTPUT_STREAM_reg_slice' (30#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:300]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_OUTPUT_STREAM_fifo' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:225]
+	Parameter DATA_BITS bound to: 24 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_OUTPUT_STREAM_fifo' (31#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:225]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_OUTPUT_STREAM_fifo__parameterized0' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:225]
+	Parameter DATA_BITS bound to: 3 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_OUTPUT_STREAM_fifo__parameterized0' (31#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:225]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_OUTPUT_STREAM_fifo__parameterized1' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:225]
+	Parameter DATA_BITS bound to: 1 - type: integer 
+	Parameter DEPTH_BITS bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 16 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_OUTPUT_STREAM_fifo__parameterized1' (31#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:225]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_OUTPUT_STREAM_if' (32#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:11]
+INFO: [Synth 8-638] synthesizing module 'hls_sobel_ap_rst_if' [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_ap_rst_if.v:10]
+	Parameter RESET_ACTIVE_LOW bound to: 1 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_ap_rst_if' (33#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_ap_rst_if.v:10]
+INFO: [Synth 8-256] done synthesizing module 'hls_sobel_top' (34#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_top.v:9]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_hls_sobel_0_1' (35#1) [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_hls_sobel_0_1/synth/EES_335_hls_sobel_0_1.v:56]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[31]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[30]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[29]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[28]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[27]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[26]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[25]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[24]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[23]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[22]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[21]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[20]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[19]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[18]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[17]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[16]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[15]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[14]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[13]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_rows_V_dout[12]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[31]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[30]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[29]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[28]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[27]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[26]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[25]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[24]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[23]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[22]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[21]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[20]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[19]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[18]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[17]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[16]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[15]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[14]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[13]
+WARNING: [Synth 8-3331] design Mat2AXIvideo has unconnected port img_cols_V_dout[12]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[31]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[30]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[29]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[28]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[27]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[26]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[25]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[24]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[23]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[22]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[21]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[20]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[19]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[18]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[17]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[16]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[15]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[14]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[13]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_rows_V_dout[12]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[31]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[30]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[29]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[28]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[27]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[26]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[25]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[24]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[23]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[22]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[21]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[20]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[19]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[18]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[17]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[16]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[15]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[14]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[13]
+WARNING: [Synth 8-3331] design Threshold has unconnected port src_cols_V_dout[12]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_keep_V_dout[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_keep_V_dout[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_keep_V_dout[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_strb_V_dout[2]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_strb_V_dout[1]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_strb_V_dout[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_id_V_dout[0]
+WARNING: [Synth 8-3331] design AXIvideo2Mat has unconnected port AXI_video_strm_V_dest_V_dout[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 441.906 ; gain = 160.504
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 441.906 ; gain = 160.504
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_hls_sobel_0_1/constraints/hls_sobel_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_hls_sobel_0_1/constraints/hls_sobel_ooc.xdc] for cell 'inst'
+Parsing XDC File [E:/EES_Board/EES_335/EES_335.runs/EES_335_hls_sobel_0_1_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [E:/EES_Board/EES_335/EES_335.runs/EES_335_hls_sobel_0_1_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.065 . Memory (MB): peak = 789.914 ; gain = 1.117
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 789.914 ; gain = 508.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z010clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 789.914 ; gain = 508.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  E:/EES_Board/EES_335/EES_335.runs/EES_335_hls_sobel_0_1_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:24 ; elapsed = 00:00:24 . Memory (MB): peak = 789.914 ; gain = 508.512
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element t_V_3_reg_204_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/AXIvideo2Mat.v:354]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element j_i_reg_136_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/CvtColor.v:294]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element t_V_1_reg_100_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Threshold.v:177]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-6014] Unused sequential element t_V_2_reg_156_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/Mat2AXIvideo.v:207]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d3_A.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[4] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:36]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:92]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element mOutPtr_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/fifo_w32_d4_A.v:87]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (2) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_ThreshoeOg.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[4] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:36]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:92]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+WARNING: [Synth 8-6014] Unused sequential element mOutPtr_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_Mat2AXIfYi.v:87]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_CvtColog8j.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_CvtColog8j.v:36]
+WARNING: [Synth 8-6014] Unused sequential element SRL_SIG_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/start_for_CvtColog8j.v:36]
+INFO: [Synth 8-5544] ROM "internal_empty_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "internal_full_n" won't be mapped to Block RAM because address size (3) smaller than threshold (5)
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:276]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:275]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:250]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[1].mem_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[2].mem_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[3].mem_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[4].mem_reg[4] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[5].mem_reg[5] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[6].mem_reg[6] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[7].mem_reg[7] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[8].mem_reg[8] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[9].mem_reg[9] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[10].mem_reg[10] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[11].mem_reg[11] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[12].mem_reg[12] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[13].mem_reg[13] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[14].mem_reg[14] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[15].mem_reg[15] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:276]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:275]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:250]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[1].mem_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[2].mem_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[3].mem_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[4].mem_reg[4] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[5].mem_reg[5] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[6].mem_reg[6] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[7].mem_reg[7] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[8].mem_reg[8] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[9].mem_reg[9] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[10].mem_reg[10] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[11].mem_reg[11] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[12].mem_reg[12] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[13].mem_reg[13] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[14].mem_reg[14] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[15].mem_reg[15] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:276]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:275]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:250]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[1].mem_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[2].mem_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[3].mem_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[4].mem_reg[4] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[5].mem_reg[5] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[6].mem_reg[6] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[7].mem_reg[7] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[8].mem_reg[8] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[9].mem_reg[9] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[10].mem_reg[10] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[11].mem_reg[11] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[12].mem_reg[12] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[13].mem_reg[13] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[14].mem_reg[14] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[15].mem_reg[15] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_INPUT_STREAM_if.v:291]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:276]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:275]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:250]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[1].mem_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[2].mem_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[3].mem_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[4].mem_reg[4] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[5].mem_reg[5] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[6].mem_reg[6] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[7].mem_reg[7] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[8].mem_reg[8] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[9].mem_reg[9] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[10].mem_reg[10] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[11].mem_reg[11] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[12].mem_reg[12] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[13].mem_reg[13] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[14].mem_reg[14] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[15].mem_reg[15] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:276]
+WARNING: [Synth 8-6014] Unused sequential element index_reg was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:275]
+WARNING: [Synth 8-6014] Unused sequential element mem_reg[0] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:250]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[1].mem_reg[1] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[2].mem_reg[2] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+WARNING: [Synth 8-6014] Unused sequential element gen_sr[3].mem_reg[3] was removed.  [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:291]
+INFO: [Common 17-14] Message 'Synth 8-6014' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ipshared/61ed/hdl/verilog/hls_sobel_OUTPUT_STREAM_if.v:276]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 789.914 ; gain = 508.512
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 8     
+	   2 Input      8 Bit       Adders := 1     
+	   2 Input      4 Bit       Adders := 17    
+	   2 Input      3 Bit       Adders := 4     
+	   2 Input      2 Bit       Adders := 9     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
++---Registers : 
+	               34 Bit    Registers := 4     
+	               32 Bit    Registers := 10    
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               24 Bit    Registers := 4     
+	               12 Bit    Registers := 7     
+	               11 Bit    Registers := 12    
+	                8 Bit    Registers := 17    
+	                4 Bit    Registers := 20    
+	                3 Bit    Registers := 4     
+	                2 Bit    Registers := 11    
+	                1 Bit    Registers := 102   
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 4     
+	   2 Input     24 Bit        Muxes := 7     
+	   3 Input      8 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 6     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 3     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 6     
+	   2 Input      2 Bit        Muxes := 20    
+	   5 Input      2 Bit        Muxes := 6     
+	   2 Input      1 Bit        Muxes := 154   
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module Block_Mat_exit7_proc 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module AXIvideo2Mat 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               24 Bit    Registers := 4     
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	                8 Bit    Registers := 1     
+	                1 Bit    Registers := 12    
++---Muxes : 
+	   2 Input     24 Bit        Muxes := 7     
+	   3 Input      8 Bit        Muxes := 1     
+	   3 Input      6 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 1     
+	   3 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 16    
+Module CvtColor 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
+	   2 Input      8 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 2     
+	               30 Bit    Registers := 1     
+	               29 Bit    Registers := 1     
+	               11 Bit    Registers := 3     
+	                8 Bit    Registers := 6     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 11    
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Threshold 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 2     
++---Registers : 
+	               12 Bit    Registers := 2     
+	               11 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 7     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module Mat2AXIvideo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     12 Bit       Adders := 1     
+	   2 Input     11 Bit       Adders := 2     
++---XORs : 
+	   2 Input      1 Bit         XORs := 1     
++---Registers : 
+	               12 Bit    Registers := 3     
+	               11 Bit    Registers := 3     
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 6     
++---Muxes : 
+	   3 Input      4 Bit        Muxes := 1     
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
+Module fifo_w32_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 2     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module fifo_w32_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module fifo_w32_d3_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w32_d4_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module fifo_w8_d1_A_shiftReg 
+Detailed RTL Component Info : 
++---Registers : 
+	                8 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 1     
+Module fifo_w8_d1_A 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      2 Bit       Adders := 1     
++---Registers : 
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 4     
+Module start_for_ThreshoeOg 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module start_for_Mat2AXIfYi 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      3 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module start_for_CvtColog8j 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      3 Bit       Adders := 1     
++---Registers : 
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      2 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 5     
+Module hls_sobel 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 1     
+Module hls_sobel_INPUT_STREAM_reg_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               34 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module hls_sobel_INPUT_STREAM_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module hls_sobel_INPUT_STREAM_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module hls_sobel_INPUT_STREAM_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module hls_sobel_OUTPUT_STREAM_reg_slice 
+Detailed RTL Component Info : 
++---Registers : 
+	               34 Bit    Registers := 2     
+	                2 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     34 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 6     
+	   5 Input      2 Bit        Muxes := 3     
+	   2 Input      1 Bit        Muxes := 3     
+Module hls_sobel_OUTPUT_STREAM_fifo 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module hls_sobel_OUTPUT_STREAM_fifo__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+Module hls_sobel_OUTPUT_STREAM_fifo__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      4 Bit       Adders := 1     
++---Registers : 
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 3     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 80 (col length:40)
+BRAMs: 120 (col length: RAMB18 40 RAMB36 20)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+DSP Report: Generating DSP CvtColor_U0/hls_sobel_mul_mulbkb_U23/hls_sobel_mul_mulbkb_DSP48_0_U/in00, operation Mode is: A*B.
+DSP Report: operator CvtColor_U0/hls_sobel_mul_mulbkb_U23/hls_sobel_mul_mulbkb_DSP48_0_U/in00 is absorbed into DSP CvtColor_U0/hls_sobel_mul_mulbkb_U23/hls_sobel_mul_mulbkb_DSP48_0_U/in00.
+DSP Report: Generating DSP CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/p, operation Mode is: C'+(A:0x74bc6)*B''.
+DSP Report: register B is absorbed into DSP CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/p.
+DSP Report: register B is absorbed into DSP CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/p.
+DSP Report: register CvtColor_U0/r_V_i_i_reg_316_reg is absorbed into DSP CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/p.
+DSP Report: operator CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/p is absorbed into DSP CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/p.
+DSP Report: operator CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/m is absorbed into DSP CvtColor_U0/hls_sobel_mac_muldEe_U25/hls_sobel_mac_muldEe_DSP48_2_U/p.
+DSP Report: Generating DSP CvtColor_U0/hls_sobel_mac_mulcud_U24/hls_sobel_mac_mulcud_DSP48_1_U/p, operation Mode is: C+(A:0x259168)*B''.
+DSP Report: register B is absorbed into DSP CvtColor_U0/hls_sobel_mac_mulcud_U24/hls_sobel_mac_mulcud_DSP48_1_U/p.
+DSP Report: register B is absorbed into DSP CvtColor_U0/hls_sobel_mac_mulcud_U24/hls_sobel_mac_mulcud_DSP48_1_U/p.
+DSP Report: operator CvtColor_U0/hls_sobel_mac_mulcud_U24/hls_sobel_mac_mulcud_DSP48_1_U/p is absorbed into DSP CvtColor_U0/hls_sobel_mac_mulcud_U24/hls_sobel_mac_mulcud_DSP48_1_U/p.
+DSP Report: operator CvtColor_U0/hls_sobel_mac_mulcud_U24/hls_sobel_mac_mulcud_DSP48_1_U/m is absorbed into DSP CvtColor_U0/hls_sobel_mac_mulcud_U24/hls_sobel_mac_mulcud_DSP48_1_U/p.
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_keep_V_dout[2]
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_keep_V_dout[1]
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_keep_V_dout[0]
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_strb_V_dout[2]
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_strb_V_dout[1]
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_strb_V_dout[0]
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_id_V_dout[0]
+WARNING: [Synth 8-3331] design hls_sobel has unconnected port input_V_dest_V_dout[0]
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\hls_sobel_U/Threshold_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/\hls_sobel_U/Block_Mat_exit7_proc_U0/ap_CS_fsm_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\hls_sobel_U/Block_Mat_exit7_proc_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\hls_sobel_U/CvtColor_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\hls_sobel_U/Mat2AXIvideo_U0/ap_done_reg_reg )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\hls_sobel_U/AXIvideo2Mat_U0/ap_done_reg_reg )
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/Block_Mat_exit7_proc_U0/ap_done_reg_reg) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/Block_Mat_exit7_proc_U0/ap_CS_fsm_reg[0]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/AXIvideo2Mat_U0/ap_done_reg_reg) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/ap_done_reg_reg) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[28]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[27]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[26]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[25]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[24]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[23]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[22]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[21]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[20]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[19]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[18]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[17]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[16]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[15]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[14]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[13]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[12]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[11]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[10]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[9]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[8]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[7]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[6]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[5]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[4]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[3]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[2]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[1]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/CvtColor_U0/r_V_1_reg_321_reg[0]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/Threshold_U0/ap_done_reg_reg) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_U/Mat2AXIvideo_U0/ap_done_reg_reg) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[33]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[32]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[29]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[28]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[27]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[26]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[25]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p2_reg[24]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[33]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[32]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[29]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[28]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[27]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[26]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[25]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_INPUT_STREAM_if_U/rs/data_p1_reg[24]) is unused and will be removed from module hls_sobel_top.
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[33]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[32]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[27]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[28]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[29] )
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[33]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[32]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[27]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[28]' (FDE) to 'inst/hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/\hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[29] )
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_OUTPUT_STREAM_if_U/rs/data_p2_reg[29]) is unused and will be removed from module hls_sobel_top.
+WARNING: [Synth 8-3332] Sequential element (hls_sobel_OUTPUT_STREAM_if_U/rs/data_p1_reg[29]) is unused and will be removed from module hls_sobel_top.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 789.914 ; gain = 508.512
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+DSP: Preliminary Mapping  Report (see note below)
++-----------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                  | DSP Mapping        | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|hls_sobel_mul_mulbkb_DSP48_0 | A*B                | 22     | 8      | -      | -      | 30     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|hls_sobel                    | C'+(A:0x74bc6)*B'' | 20     | 9      | 29     | -      | 29     | 0    | 2    | 1    | -    | -     | 0    | 0    | 
+|hls_sobel                    | C+(A:0x259168)*B'' | 23     | 9      | 30     | -      | 30     | 0    | 2    | 0    | -    | -     | 0    | 0    | 
++-----------------------------+--------------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+Note: The table above is a preliminary report that shows the DSPs inferred at the current stage of the synthesis flow. Some DSP may be reimplemented as non DSP primitives later in the synthesis flow. Multiple instantiated DSPs are reported only once.
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:43 ; elapsed = 00:00:44 . Memory (MB): peak = 854.145 ; gain = 572.742
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:44 ; elapsed = 00:00:45 . Memory (MB): peak = 858.418 ; gain = 577.016
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][0]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[0]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][1]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[1]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][2]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[2]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][3]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[3]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][4]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[4]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][5]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][6]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][7]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[7]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][9]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][11]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_cols_V_c18_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][10]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_12_reg_411_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][8]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][9]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][11]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/hls_sobel_U/img_0_rows_V_c17_U/U_fifo_w32_d1_A_ram/SRL_SIG_reg[0][10]' (FDE) to 'inst/hls_sobel_U/AXIvideo2Mat_U0/tmp_reg_406_reg[10]'
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:45 ; elapsed = 00:00:45 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:45 ; elapsed = 00:00:46 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:46 ; elapsed = 00:00:46 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Dynamic Shift Register Report:
++------------+------------------------+--------+------------+--------+---------+--------+--------+--------+
+|Module Name | RTL Name               | Length | Data Width | SRL16E | SRLC32E | Mux F7 | Mux F8 | Mux F9 | 
++------------+------------------------+--------+------------+--------+---------+--------+--------+--------+
+|dsrl        | SRL_SIG_reg[3]         | 4      | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__1     | SRL_SIG_reg[4]         | 8      | 32         | 32     | 0       | 0      | 0      | 0      | 
+|dsrl__2     | SRL_SIG_reg[3]         | 4      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__3     | SRL_SIG_reg[4]         | 8      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__4     | SRL_SIG_reg[2]         | 4      | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__5     | gen_sr[15].mem_reg[15] | 16     | 24         | 24     | 0       | 0      | 0      | 0      | 
+|dsrl__6     | gen_sr[15].mem_reg[15] | 16     | 3          | 3      | 0       | 0      | 0      | 0      | 
+|dsrl__7     | gen_sr[15].mem_reg[15] | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
+|dsrl__8     | gen_sr[15].mem_reg[15] | 16     | 24         | 24     | 0       | 0      | 0      | 0      | 
+|dsrl__9     | gen_sr[15].mem_reg[15] | 16     | 3          | 3      | 0       | 0      | 0      | 0      | 
+|dsrl__10    | gen_sr[15].mem_reg[15] | 16     | 1          | 1      | 0       | 0      | 0      | 0      | 
++------------+------------------------+--------+------------+--------+---------+--------+--------+--------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    18|
+|2     |DSP48E1   |     1|
+|3     |DSP48E1_1 |     1|
+|4     |DSP48E1_2 |     1|
+|5     |LUT1      |    70|
+|6     |LUT2      |   111|
+|7     |LUT3      |   108|
+|8     |LUT4      |   327|
+|9     |LUT5      |    84|
+|10    |LUT6      |   195|
+|11    |SRL16E    |   103|
+|12    |FDCE      |    14|
+|13    |FDPE      |    70|
+|14    |FDRE      |   887|
+|15    |FDSE      |    48|
++------+----------+------+
+
+Report Instance Areas: 
++------+-----------------------------------------+------------------------------------------------+------+
+|      |Instance                                 |Module                                          |Cells |
++------+-----------------------------------------+------------------------------------------------+------+
+|1     |top                                      |                                                |  2038|
+|2     |  inst                                   |hls_sobel_top                                   |  2038|
+|3     |    hls_sobel_INPUT_STREAM_if_U          |hls_sobel_INPUT_STREAM_if                       |   220|
+|4     |      input_V_data_V_fifo                |hls_sobel_INPUT_STREAM_fifo                     |    38|
+|5     |      input_V_dest_V_fifo                |hls_sobel_INPUT_STREAM_fifo__parameterized1     |    14|
+|6     |      input_V_id_V_fifo                  |hls_sobel_INPUT_STREAM_fifo__parameterized1_22  |    15|
+|7     |      input_V_keep_V_fifo                |hls_sobel_INPUT_STREAM_fifo__parameterized0     |    14|
+|8     |      input_V_last_V_fifo                |hls_sobel_INPUT_STREAM_fifo__parameterized1_23  |    15|
+|9     |      input_V_strb_V_fifo                |hls_sobel_INPUT_STREAM_fifo__parameterized0_24  |    19|
+|10    |      input_V_user_V_fifo                |hls_sobel_INPUT_STREAM_fifo__parameterized1_25  |    18|
+|11    |      rs                                 |hls_sobel_INPUT_STREAM_reg_slice                |    87|
+|12    |    hls_sobel_OUTPUT_STREAM_if_U         |hls_sobel_OUTPUT_STREAM_if                      |   227|
+|13    |      output_V_data_V_fifo               |hls_sobel_OUTPUT_STREAM_fifo                    |    38|
+|14    |      output_V_dest_V_fifo               |hls_sobel_OUTPUT_STREAM_fifo__parameterized1    |    14|
+|15    |      output_V_id_V_fifo                 |hls_sobel_OUTPUT_STREAM_fifo__parameterized1_18 |    17|
+|16    |      output_V_keep_V_fifo               |hls_sobel_OUTPUT_STREAM_fifo__parameterized0    |    17|
+|17    |      output_V_last_V_fifo               |hls_sobel_OUTPUT_STREAM_fifo__parameterized1_19 |    15|
+|18    |      output_V_strb_V_fifo               |hls_sobel_OUTPUT_STREAM_fifo__parameterized0_20 |    15|
+|19    |      output_V_user_V_fifo               |hls_sobel_OUTPUT_STREAM_fifo__parameterized1_21 |    15|
+|20    |      rs                                 |hls_sobel_OUTPUT_STREAM_reg_slice               |    96|
+|21    |    hls_sobel_U                          |hls_sobel                                       |  1591|
+|22    |      AXIvideo2Mat_U0                    |AXIvideo2Mat                                    |   332|
+|23    |      Block_Mat_exit7_proc_U0            |Block_Mat_exit7_proc                            |     2|
+|24    |      CvtColor_U0                        |CvtColor                                        |   295|
+|25    |        hls_sobel_mac_mulcud_U24         |hls_sobel_mac_mulcud                            |     6|
+|26    |          hls_sobel_mac_mulcud_DSP48_1_U |hls_sobel_mac_mulcud_DSP48_1                    |     6|
+|27    |        hls_sobel_mac_muldEe_U25         |hls_sobel_mac_muldEe                            |     2|
+|28    |          hls_sobel_mac_muldEe_DSP48_2_U |hls_sobel_mac_muldEe_DSP48_2                    |     2|
+|29    |        hls_sobel_mul_mulbkb_U23         |hls_sobel_mul_mulbkb                            |    23|
+|30    |          hls_sobel_mul_mulbkb_DSP48_0_U |hls_sobel_mul_mulbkb_DSP48_0                    |    23|
+|31    |      Mat2AXIvideo_U0                    |Mat2AXIvideo                                    |   151|
+|32    |      Threshold_U0                       |Threshold                                       |   124|
+|33    |      img_0_cols_V_c18_U                 |fifo_w32_d1_A                                   |    92|
+|34    |        U_fifo_w32_d1_A_ram              |fifo_w32_d1_A_shiftReg_17                       |    84|
+|35    |      img_0_cols_V_c_U                   |fifo_w32_d1_A_0                                 |   104|
+|36    |        U_fifo_w32_d1_A_ram              |fifo_w32_d1_A_shiftReg_16                       |    96|
+|37    |      img_0_data_stream_0_U              |fifo_w8_d1_A                                    |    31|
+|38    |        U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_15                        |    24|
+|39    |      img_0_data_stream_1_U              |fifo_w8_d1_A_1                                  |    31|
+|40    |        U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_14                        |    24|
+|41    |      img_0_data_stream_2_U              |fifo_w8_d1_A_2                                  |    31|
+|42    |        U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_13                        |    24|
+|43    |      img_0_rows_V_c17_U                 |fifo_w32_d1_A_3                                 |    92|
+|44    |        U_fifo_w32_d1_A_ram              |fifo_w32_d1_A_shiftReg_12                       |    84|
+|45    |      img_0_rows_V_c_U                   |fifo_w32_d1_A_4                                 |   104|
+|46    |        U_fifo_w32_d1_A_ram              |fifo_w32_d1_A_shiftReg                          |    96|
+|47    |      img_1_cols_V_c_U                   |fifo_w32_d3_A                                   |    25|
+|48    |        U_fifo_w32_d3_A_ram              |fifo_w32_d3_A_shiftReg_11                       |    14|
+|49    |      img_1_data_stream_0_U              |fifo_w8_d1_A_5                                  |    29|
+|50    |        U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg_10                        |    21|
+|51    |      img_1_rows_V_c_U                   |fifo_w32_d3_A_6                                 |    25|
+|52    |        U_fifo_w32_d3_A_ram              |fifo_w32_d3_A_shiftReg                          |    14|
+|53    |      img_2_cols_V_c_U                   |fifo_w32_d4_A                                   |    28|
+|54    |        U_fifo_w32_d4_A_ram              |fifo_w32_d4_A_shiftReg_9                        |    15|
+|55    |      img_2_data_stream_0_U              |fifo_w8_d1_A_7                                  |    11|
+|56    |        U_fifo_w8_d1_A_ram               |fifo_w8_d1_A_shiftReg                           |     3|
+|57    |      img_2_rows_V_c_U                   |fifo_w32_d4_A_8                                 |    34|
+|58    |        U_fifo_w32_d4_A_ram              |fifo_w32_d4_A_shiftReg                          |    15|
+|59    |      start_for_CvtColog8j_U             |start_for_CvtColog8j                            |    19|
+|60    |      start_for_Mat2AXIfYi_U             |start_for_Mat2AXIfYi                            |    17|
+|61    |      start_for_ThreshoeOg_U             |start_for_ThreshoeOg                            |    13|
++------+-----------------------------------------+------------------------------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 884.883 ; gain = 603.480
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 220 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:29 ; elapsed = 00:00:39 . Memory (MB): peak = 884.883 ; gain = 255.473
+Synthesis Optimization Complete : Time (s): cpu = 00:00:46 ; elapsed = 00:00:47 . Memory (MB): peak = 884.883 ; gain = 603.480
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 21 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+INFO: [Common 17-83] Releasing license: Synthesis
+160 Infos, 251 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:48 ; elapsed = 00:00:49 . Memory (MB): peak = 884.883 ; gain = 614.953
+INFO: [Common 17-1381] The checkpoint 'E:/EES_Board/EES_335/EES_335.runs/EES_335_hls_sobel_0_1_synth_1/EES_335_hls_sobel_0_1.dcp' has been generated.
+INFO: [Coretcl 2-1482] Added synthesis output to IP cache for IP e:/EES_Board/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_hls_sobel_0_1/EES_335_hls_sobel_0_1.xci
+INFO: [Coretcl 2-1174] Renamed 60 cell refs.
+INFO: [Common 17-1381] The checkpoint 'E:/EES_Board/EES_335/EES_335.runs/EES_335_hls_sobel_0_1_synth_1/EES_335_hls_sobel_0_1.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file EES_335_hls_sobel_0_1_utilization_synth.rpt -pb EES_335_hls_sobel_0_1_utilization_synth.pb
+report_utilization: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.026 . Memory (MB): peak = 884.883 ; gain = 0.000
+INFO: [Common 17-206] Exiting Vivado at Mon Jan 14 17:52:49 2019...

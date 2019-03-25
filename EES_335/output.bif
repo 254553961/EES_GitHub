@@ -1,0 +1,7 @@
+//arch = zynq; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader]C:\Users\yang\Desktop\eees335\EES_335\EES_335.sdk\fsbl\Debug\fsbl.elf
+	C:\Users\yang\Desktop\eees335\EES_335\EES_335.runs\impl_1\EES_335_wrapper.bit
+	C:\Users\yang\Desktop\eees335\EES_335\EES_335.sdk\demo\Debug\demo.elf
+}

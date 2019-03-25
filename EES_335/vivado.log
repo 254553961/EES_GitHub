@@ -1,0 +1,686 @@
+#-----------------------------------------------------------
+# Vivado v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Tue Oct 23 13:56:50 2018
+# Process ID: 12260
+# Current directory: C:/Users/yang/Desktop/eees335/EES_335
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent7304 C:\Users\yang\Desktop\eees335\EES_335\EES_335.xpr
+# Log file: C:/Users/yang/Desktop/eees335/EES_335/vivado.log
+# Journal file: C:/Users/yang/Desktop/eees335/EES_335\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/yang/Desktop/eees335/EES_335/EES_335.xpr
+INFO: [Project 1-313] Project file moved from 'C:/Users/yang/Desktop/EES335_SD0/EES335/EES_335' since last save.
+Scanning sources...
+Finished scanning sources
+WARNING: [filemgmt 56-2] IP Repository Path: Could not find the directory 'C:/Users/yang/Desktop/eees335/IPs', nor could it be found using path 'C:/Users/yang/Desktop/EES335_SD0/EES335/IPs'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/yang/Desktop/eees335/IPs'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/2017.4/Vivado/2017.4/data/ip'.
+WARNING: [BD 41-1661] One or more IPs have been locked in the design 'EES_335.bd'. Please run report_ip_status for more details and recommendations on how to fix this issue.
+List of locked IPs:
+EES_335_ab_coder_0_1
+EES_335_ccd_top_0_2
+EES_335_ab_coder_0_0
+EES_335_servo_motor_pwm_drv_0_0
+EES_335_servo_motor_pwm_drv_0_1
+
+open_project: Time (s): cpu = 00:00:19 ; elapsed = 00:00:11 . Memory (MB): peak = 896.660 ; gain = 166.098
+launch_sdk -workspace C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk -hwspec C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk/EES_335_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk -hwspec C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk/EES_335_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+open_hw
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2017.4
+  **** Build date : Dec 15 2017-21:08:27
+    ** Copyright 1986-2017 Xilinx, Inc. All Rights Reserved.
+
+
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at TCP:localhost:3121.
+ Targets(s) ", jsn1" may be locked by another hw_server.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: localhost
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtools 27-2271] Target localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3 is no longer opened.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3
+ERROR: [Labtools 27-2270] Target localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3 is no longer available.
+Check cable connectivity and that the target board is powered up then
+use the disconnect_hw_server and connect_hw_server to re-register this hardware target.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+open_hw_target {localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3}
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 1] -mem_dev [lindex [get_cfgmem_parts {s25fl256s-3.3v-qspi-x4-single}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+WARNING: [Vivado 12-4173] The following IPs are not generated and locked, no out-of-context (OOC) run will be created. Please select 'Report IP Status' from 'Tools/Report' or run Tcl command 'report_ip_status' for more information.
+C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd
+
+synth_design -rtl -name rtl_1
+Command: synth_design -rtl -name rtl_1
+Starting synth_design
+Using part: xc7z010clg400-1
+Top: EES_335_wrapper
+CRITICAL WARNING: [filemgmt 20-1741] File 'EES_335.v' is used by one or more modules, but with different contents, and may lead to unpredictable results:
+* EES_335 (C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335.v)
+* EES_335 (C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v)
+Please reset and regenerate these modules to resolve the differences, or synthesize them independently.
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module EES_335 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:13]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module EES_335_ps7_0_axi_periph_0 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:1056]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m00_couplers_imp_4ZAPS9 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2729]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m01_couplers_imp_15PNW3U [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2861]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m02_couplers_imp_1IVVOI6 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2993]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m03_couplers_imp_IFDAX9 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3139]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m04_couplers_imp_RGOVYE [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3285]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m05_couplers_imp_1RN2U85 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3417]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m06_couplers_imp_1EPQCJL [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3549]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m07_couplers_imp_DP8R42 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3681]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m08_couplers_imp_1WS38UV [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3827]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module m09_couplers_imp_V5GEZ8 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3973]
+CRITICAL WARNING: [Synth 8-2490] overwriting previous definition of module s00_couplers_imp_15U9SB9 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:4105]
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1611.289 ; gain = 62.559
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'EES_335_wrapper' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:12]
+INFO: [Synth 8-638] synthesizing module 'EES_335' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:13]
+INFO: [Synth 8-638] synthesizing module 'EES_335_axi_uartlite_0_2' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_uartlite_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_axi_uartlite_0_2' (1#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_uartlite_0_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_axi_gpio_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_axi_gpio_0_0' (2#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_gpio_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_axi_uartlite_0_1' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_uartlite_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_axi_uartlite_0_1' (3#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_uartlite_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_axi_gpio_0_2' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_axi_gpio_0_2' (4#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_gpio_0_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_axi_uartlite_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_axi_uartlite_0_0' (5#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_axi_uartlite_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_ab_coder_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_ab_coder_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_ab_coder_0_0' (6#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_ab_coder_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_ab_coder_0_1' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_ab_coder_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_ab_coder_0_1' (7#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_ab_coder_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_ccd_top_0_2' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_ccd_top_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_ccd_top_0_2' (8#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_ccd_top_0_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_processing_system7_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_processing_system7_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_processing_system7_0_0' (9#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_processing_system7_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'processing_system7_0' of module 'EES_335_processing_system7_0_0' requires 112 connections, but only 96 given [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:613]
+INFO: [Synth 8-638] synthesizing module 'EES_335_ps7_0_axi_periph_0' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:1056]
+INFO: [Synth 8-638] synthesizing module 'm00_couplers_imp_4ZAPS9' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2729]
+INFO: [Synth 8-256] done synthesizing module 'm00_couplers_imp_4ZAPS9' (10#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2729]
+INFO: [Synth 8-638] synthesizing module 'm01_couplers_imp_15PNW3U' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2861]
+INFO: [Synth 8-256] done synthesizing module 'm01_couplers_imp_15PNW3U' (11#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2861]
+INFO: [Synth 8-638] synthesizing module 'm02_couplers_imp_1IVVOI6' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2993]
+INFO: [Synth 8-256] done synthesizing module 'm02_couplers_imp_1IVVOI6' (12#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2993]
+INFO: [Synth 8-638] synthesizing module 'm03_couplers_imp_IFDAX9' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3139]
+INFO: [Synth 8-256] done synthesizing module 'm03_couplers_imp_IFDAX9' (13#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3139]
+INFO: [Synth 8-638] synthesizing module 'm04_couplers_imp_RGOVYE' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3285]
+INFO: [Synth 8-256] done synthesizing module 'm04_couplers_imp_RGOVYE' (14#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3285]
+INFO: [Synth 8-638] synthesizing module 'm05_couplers_imp_1RN2U85' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3417]
+INFO: [Synth 8-256] done synthesizing module 'm05_couplers_imp_1RN2U85' (15#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3417]
+INFO: [Synth 8-638] synthesizing module 'm06_couplers_imp_1EPQCJL' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3549]
+INFO: [Synth 8-256] done synthesizing module 'm06_couplers_imp_1EPQCJL' (16#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3549]
+INFO: [Synth 8-638] synthesizing module 'm07_couplers_imp_DP8R42' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3681]
+INFO: [Synth 8-256] done synthesizing module 'm07_couplers_imp_DP8R42' (17#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3681]
+INFO: [Synth 8-638] synthesizing module 'm08_couplers_imp_1WS38UV' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3827]
+INFO: [Synth 8-256] done synthesizing module 'm08_couplers_imp_1WS38UV' (18#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3827]
+INFO: [Synth 8-638] synthesizing module 'm09_couplers_imp_V5GEZ8' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3973]
+INFO: [Synth 8-256] done synthesizing module 'm09_couplers_imp_V5GEZ8' (19#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:3973]
+INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_15U9SB9' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:4105]
+INFO: [Synth 8-638] synthesizing module 'EES_335_auto_pc_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_auto_pc_0' (20#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_auto_pc_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_15U9SB9' (21#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:4105]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xbar_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xbar_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xbar_0' (22#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xbar_0_stub.v:6]
+WARNING: [Synth 8-689] width (27) of port connection 'm_axi_arprot' does not match port width (30) of module 'EES_335_xbar_0' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2690]
+WARNING: [Synth 8-689] width (27) of port connection 'm_axi_awprot' does not match port width (30) of module 'EES_335_xbar_0' [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:2694]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_ps7_0_axi_periph_0' (23#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:1056]
+INFO: [Synth 8-638] synthesizing module 'EES_335_rst_ps7_0_100M_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_rst_ps7_0_100M_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_rst_ps7_0_100M_0' (24#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_rst_ps7_0_100M_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'rst_ps7_0_100M' of module 'EES_335_rst_ps7_0_100M_0' requires 10 connections, but only 7 given [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:951]
+INFO: [Synth 8-638] synthesizing module 'EES_335_servo_motor_pwm_drv_0_1' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_servo_motor_pwm_drv_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_servo_motor_pwm_drv_0_1' (25#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_servo_motor_pwm_drv_0_1_stub.v:6]
+WARNING: [Synth 8-350] instance 'servo_motor_pwm_L' of module 'EES_335_servo_motor_pwm_drv_0_1' requires 26 connections, but only 23 given [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:959]
+INFO: [Synth 8-638] synthesizing module 'EES_335_servo_motor_pwm_drv_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_servo_motor_pwm_drv_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_servo_motor_pwm_drv_0_0' (26#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_servo_motor_pwm_drv_0_0_stub.v:6]
+WARNING: [Synth 8-350] instance 'servo_motor_pwm_R' of module 'EES_335_servo_motor_pwm_drv_0_0' requires 26 connections, but only 23 given [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:983]
+INFO: [Synth 8-638] synthesizing module 'EES_335_util_vector_logic_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_util_vector_logic_0_0' (27#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_util_vector_logic_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xadc_wiz_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xadc_wiz_0_0_stub.v:5]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xadc_wiz_0_0' (28#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xadc_wiz_0_0_stub.v:5]
+WARNING: [Synth 8-350] instance 'xadc_wiz_0' of module 'EES_335_xadc_wiz_0_0' requires 36 connections, but only 23 given [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:1010]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xlconcat_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xlconcat_0_0' (29#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlconcat_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xlslice_0_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_0_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xlslice_0_0' (30#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_0_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xlslice_0_1' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_0_1_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xlslice_0_1' (31#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_0_1_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xlslice_0_2' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_0_2_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xlslice_0_2' (32#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_0_2_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xlslice_3_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_3_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xlslice_3_0' (33#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_3_0_stub.v:6]
+INFO: [Synth 8-638] synthesizing module 'EES_335_xlslice_4_0' [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_4_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_xlslice_4_0' (34#1) [C:/Users/yang/Desktop/eees335/EES_335/.Xil/Vivado-12260-DESKTOP-JHR27RT/realtime/EES_335_xlslice_4_0_stub.v:6]
+INFO: [Synth 8-256] done synthesizing module 'EES_335' (35#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/synth/EES_335.v:13]
+INFO: [Synth 8-638] synthesizing module 'IOBUF' [D:/Xilinx/2017.4/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
+	Parameter DRIVE bound to: 12 - type: integer 
+	Parameter IBUF_LOW_PWR bound to: TRUE - type: string 
+	Parameter IOSTANDARD bound to: DEFAULT - type: string 
+	Parameter SLEW bound to: SLOW - type: string 
+INFO: [Synth 8-256] done synthesizing module 'IOBUF' (36#1) [D:/Xilinx/2017.4/Vivado/2017.4/scripts/rt/data/unisim_comp.v:22655]
+WARNING: [Synth 8-3848] Net led_tri_o in module/entity EES_335_wrapper does not have driver. [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:89]
+WARNING: [Synth 8-3848] Net left_tri_o in module/entity EES_335_wrapper does not have driver. [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:94]
+WARNING: [Synth 8-3848] Net right_tri_o in module/entity EES_335_wrapper does not have driver. [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:99]
+WARNING: [Synth 8-3848] Net SW_tri_i in module/entity EES_335_wrapper does not have driver. [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:162]
+INFO: [Synth 8-256] done synthesizing module 'EES_335_wrapper' (37#1) [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:12]
+WARNING: [Synth 8-3331] design s00_couplers_imp_15U9SB9 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design s00_couplers_imp_15U9SB9 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m09_couplers_imp_V5GEZ8 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m09_couplers_imp_V5GEZ8 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m09_couplers_imp_V5GEZ8 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m09_couplers_imp_V5GEZ8 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m08_couplers_imp_1WS38UV has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m08_couplers_imp_1WS38UV has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m08_couplers_imp_1WS38UV has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m08_couplers_imp_1WS38UV has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m07_couplers_imp_DP8R42 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_DP8R42 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m07_couplers_imp_DP8R42 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m07_couplers_imp_DP8R42 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_1EPQCJL has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_1EPQCJL has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m06_couplers_imp_1EPQCJL has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m06_couplers_imp_1EPQCJL has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1RN2U85 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1RN2U85 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m05_couplers_imp_1RN2U85 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m05_couplers_imp_1RN2U85 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_RGOVYE has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_RGOVYE has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m04_couplers_imp_RGOVYE has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m04_couplers_imp_RGOVYE has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_IFDAX9 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_IFDAX9 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m03_couplers_imp_IFDAX9 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m03_couplers_imp_IFDAX9 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1IVVOI6 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1IVVOI6 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m02_couplers_imp_1IVVOI6 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m02_couplers_imp_1IVVOI6 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_15PNW3U has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_15PNW3U has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m01_couplers_imp_15PNW3U has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m01_couplers_imp_15PNW3U has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_4ZAPS9 has unconnected port M_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_4ZAPS9 has unconnected port M_ARESETN
+WARNING: [Synth 8-3331] design m00_couplers_imp_4ZAPS9 has unconnected port S_ACLK
+WARNING: [Synth 8-3331] design m00_couplers_imp_4ZAPS9 has unconnected port S_ARESETN
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[7]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[6]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[5]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[4]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[3]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[2]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[1]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port led_tri_o[0]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port left_tri_o[1]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port left_tri_o[0]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port right_tri_o[1]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port right_tri_o[0]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port sw_tri_i[3]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port sw_tri_i[2]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port sw_tri_i[1]
+WARNING: [Synth 8-3331] design EES_335_wrapper has unconnected port sw_tri_i[0]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:06 . Memory (MB): peak = 1654.070 ; gain = 105.340
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+WARNING: [Synth 8-3295] tying undriven pin EES_335_i:SW_tri_i[3] to constant 0 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:184]
+WARNING: [Synth 8-3295] tying undriven pin EES_335_i:SW_tri_i[2] to constant 0 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:184]
+WARNING: [Synth 8-3295] tying undriven pin EES_335_i:SW_tri_i[1] to constant 0 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:184]
+WARNING: [Synth 8-3295] tying undriven pin EES_335_i:SW_tri_i[0] to constant 0 [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/hdl/EES_335_wrapper.v:184]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:08 ; elapsed = 00:00:06 . Memory (MB): peak = 1654.070 ; gain = 105.340
+---------------------------------------------------------------------------------
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2.dcp' for cell 'EES_335_i/BlueTooth'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0.dcp' for cell 'EES_335_i/LED_SW'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1.dcp' for cell 'EES_335_i/RFID'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2.dcp' for cell 'EES_335_i/Warning_Led'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0.dcp' for cell 'EES_335_i/ZigBee'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ab_coder_0_0/EES_335_ab_coder_0_0.dcp' for cell 'EES_335_i/ab_coder_l'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ab_coder_0_1/EES_335_ab_coder_0_1.dcp' for cell 'EES_335_i/ab_coder_r'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/EES_335_ccd_top_0_2.dcp' for cell 'EES_335_i/ccd_top_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_processing_system7_0_0/EES_335_processing_system7_0_0.dcp' for cell 'EES_335_i/processing_system7_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0.dcp' for cell 'EES_335_i/rst_ps7_0_100M'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_servo_motor_pwm_drv_0_1/EES_335_servo_motor_pwm_drv_0_1.dcp' for cell 'EES_335_i/servo_motor_pwm_L'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_servo_motor_pwm_drv_0_0/EES_335_servo_motor_pwm_drv_0_0.dcp' for cell 'EES_335_i/servo_motor_pwm_R'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_util_vector_logic_0_0/EES_335_util_vector_logic_0_0.dcp' for cell 'EES_335_i/util_vector_logic_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xadc_wiz_0_0/EES_335_xadc_wiz_0_0.dcp' for cell 'EES_335_i/xadc_wiz_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xlconcat_0_0/EES_335_xlconcat_0_0.dcp' for cell 'EES_335_i/xlconcat_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xlslice_0_0/EES_335_xlslice_0_0.dcp' for cell 'EES_335_i/xlslice_0'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xlslice_0_1/EES_335_xlslice_0_1.dcp' for cell 'EES_335_i/xlslice_1'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xlslice_0_2/EES_335_xlslice_0_2.dcp' for cell 'EES_335_i/xlslice_2'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xlslice_3_0/EES_335_xlslice_3_0.dcp' for cell 'EES_335_i/xlslice_3'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xlslice_4_0/EES_335_xlslice_4_0.dcp' for cell 'EES_335_i/xlslice_4'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xbar_0/EES_335_xbar_0.dcp' for cell 'EES_335_i/ps7_0_axi_periph/xbar'
+INFO: [Project 1-454] Reading design checkpoint 'c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_auto_pc_0/EES_335_auto_pc_0.dcp' for cell 'EES_335_i/ps7_0_axi_periph/s00_couplers/auto_pc'
+INFO: [Netlist 29-17] Analyzing 197 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2017.4
+INFO: [Device 21-403] Loading part xc7z010clg400-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-140] Inserted 20 IBUFs to IO ports without IO buffers.
+INFO: [Opt 31-141] Inserted 24 OBUFs to IO ports without IO buffers.
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_processing_system7_0_0/EES_335_processing_system7_0_0.xdc] for cell 'EES_335_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_processing_system7_0_0/EES_335_processing_system7_0_0.xdc] for cell 'EES_335_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_processing_system7_0_0/EES_335_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/EES_335_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/EES_335_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0_board.xdc] for cell 'EES_335_i/ZigBee/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0_board.xdc] for cell 'EES_335_i/ZigBee/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0.xdc] for cell 'EES_335_i/ZigBee/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0.xdc] for cell 'EES_335_i/ZigBee/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0_board.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0_board.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1_board.xdc] for cell 'EES_335_i/RFID/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1_board.xdc] for cell 'EES_335_i/RFID/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1.xdc] for cell 'EES_335_i/RFID/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1.xdc] for cell 'EES_335_i/RFID/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xadc_wiz_0_0/EES_335_xadc_wiz_0_0.xdc] for cell 'EES_335_i/xadc_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xadc_wiz_0_0/EES_335_xadc_wiz_0_0.xdc] for cell 'EES_335_i/xadc_wiz_0/inst'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2_board.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2_board.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0_board.xdc] for cell 'EES_335_i/LED_SW/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0_board.xdc] for cell 'EES_335_i/LED_SW/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0.xdc] for cell 'EES_335_i/LED_SW/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0.xdc] for cell 'EES_335_i/LED_SW/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2_board.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2_board.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/constrs_1/new/EES335.xdc]
+Finished Parsing XDC File [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/constrs_1/new/EES335.xdc]
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2 instances were transformed.
+  IOBUF => IOBUF (IBUF, OBUFT): 2 instances
+
+RTL Elaboration Complete:  : Time (s): cpu = 00:00:34 ; elapsed = 00:00:29 . Memory (MB): peak = 2062.094 ; gain = 513.363
+107 Infos, 81 Warnings, 14 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:34 ; elapsed = 00:00:32 . Memory (MB): peak = 2062.094 ; gain = 513.363
+startgroup
+set_property package_pin "" [get_ports [list  {vga_red[0]}]]
+place_ports {vga_blue[3]} L14
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vga_blue[0]}]]
+place_ports {vga_blue[2]} L15
+endgroup
+startgroup
+set_property package_pin "" [get_ports [list  {vga_red[1]}]]
+place_ports {vga_blue[1]} N15
+endgroup
+place_ports {vga_blue[0]} N16
+place_ports {vga_green[3]} M15
+startgroup
+set_property package_pin "" [get_ports [list  {vga_red[2]}]]
+place_ports {vga_green[2]} M14
+endgroup
+place_ports {vga_red[2]} F19
+place_ports {vga_red[1]} H18
+place_ports {vga_red[0]} J18
+save_constraints
+report_ip_status -name ip_status 
+update_ip_catalog -rebuild
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+WARNING: [IP_Flow 19-2248] Failed to load user IP repository 'c:/Users/yang/Desktop/eees335/IPs'; Can't find the specified path.
+If this directory should no longer be in your list of user repositories, go to the IP Settings dialog and remove it.
+set_property  ip_repo_paths  {} [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+set_property  ip_repo_paths  C:/Users/yang/Desktop/eees335/EES_335/IPs [current_project]
+update_ip_catalog
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/yang/Desktop/eees335/EES_335/IPs'.
+report_ip_status -name ip_status 
+startgroup
+set_property package_pin "" [get_ports [list  {vga_green[1]}]]
+place_ports {vga_green[0]} J16
+endgroup
+place_ports {vga_green[0]} K16
+place_ports {vga_green[1]} J16
+save_constraints
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sources_1
+startgroup
+set_property package_pin "" [get_ports [list  {vga_green[0]}]]
+place_ports {vga_green[1]} K16
+endgroup
+place_ports {vga_green[1]} J16
+place_ports {vga_green[0]} K16
+save_constraints
+WARNING: [Vivado 12-4173] The following IPs are not generated and locked, no out-of-context (OOC) run will be created. Please select 'Report IP Status' from 'Tools/Report' or run Tcl command 'report_ip_status' for more information.
+C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd
+
+refresh_design
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_processing_system7_0_0/EES_335_processing_system7_0_0.xdc] for cell 'EES_335_i/processing_system7_0/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_processing_system7_0_0/EES_335_processing_system7_0_0.xdc] for cell 'EES_335_i/processing_system7_0/inst'
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_processing_system7_0_0/EES_335_processing_system7_0_0.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/EES_335_wrapper_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/EES_335_wrapper_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0_board.xdc] for cell 'EES_335_i/ZigBee/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0_board.xdc] for cell 'EES_335_i/ZigBee/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0.xdc] for cell 'EES_335_i/ZigBee/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_0/EES_335_axi_uartlite_0_0.xdc] for cell 'EES_335_i/ZigBee/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0_board.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0_board.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_rst_ps7_0_100M_0/EES_335_rst_ps7_0_100M_0.xdc] for cell 'EES_335_i/rst_ps7_0_100M/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1_board.xdc] for cell 'EES_335_i/RFID/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1_board.xdc] for cell 'EES_335_i/RFID/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1.xdc] for cell 'EES_335_i/RFID/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_1/EES_335_axi_uartlite_0_1.xdc] for cell 'EES_335_i/RFID/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xadc_wiz_0_0/EES_335_xadc_wiz_0_0.xdc] for cell 'EES_335_i/xadc_wiz_0/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_xadc_wiz_0_0/EES_335_xadc_wiz_0_0.xdc] for cell 'EES_335_i/xadc_wiz_0/inst'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2_board.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2_board.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_uartlite_0_2/EES_335_axi_uartlite_0_2.xdc] for cell 'EES_335_i/BlueTooth/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0_board.xdc] for cell 'EES_335_i/LED_SW/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0_board.xdc] for cell 'EES_335_i/LED_SW/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0.xdc] for cell 'EES_335_i/LED_SW/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_0/EES_335_axi_gpio_0_0.xdc] for cell 'EES_335_i/LED_SW/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2_board.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2_board.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_axi_gpio_0_2/EES_335_axi_gpio_0_2.xdc] for cell 'EES_335_i/Warning_Led/U0'
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+INFO: [Timing 38-2] Deriving generated clocks
+Parsing XDC File [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/constrs_1/new/EES335.xdc]
+Finished Parsing XDC File [C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/constrs_1/new/EES335.xdc]
+Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+Finished Parsing XDC File [c:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/ip/EES_335_ccd_top_0_2/sources_1/ip/clk_wiz_0_1/clk_wiz_0_late.xdc] for cell 'EES_335_i/ccd_top_0/inst/ccd_u0/clk_div/inst'
+Completed Processing XDC Constraints
+
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+refresh_design: Time (s): cpu = 00:00:13 ; elapsed = 00:00:09 . Memory (MB): peak = 2305.840 ; gain = 58.801
+open_bd_design {C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd}
+Adding cell -- xilinx.com:ip:xlconcat:2.1 - xlconcat_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_1
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_2
+Adding cell -- xilinx.com:ip:util_vector_logic:2.0 - util_vector_logic_0
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_3
+Adding cell -- xilinx.com:ip:xlslice:1.0 - xlslice_4
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - LED_SW
+Adding cell -- xilinx.com:ip:axi_gpio:2.0 - Warning_Led
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - ZigBee
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - RFID
+Adding cell -- xilinx.com:ip:axi_uartlite:2.0 - BlueTooth
+Adding cell -- xilinx.com:ip:processing_system7:5.5 - processing_system7_0
+Adding cell -- xilinx.com:ip:proc_sys_reset:5.0 - rst_ps7_0_100M
+Adding cell -- xilinx.com:ip:xadc_wiz:3.3 - xadc_wiz_0
+Adding cell -- xilinx.com:user:ab_coder:1.0 - ab_coder_l
+Adding cell -- xilinx.com:user:ab_coder:1.0 - ab_coder_r
+Adding cell -- xilinx.com:user:servo_motor_pwm_drv:1.0 - servo_motor_pwm_R
+Adding cell -- xilinx.com:user:servo_motor_pwm_drv:1.0 - servo_motor_pwm_L
+Adding cell -- xilinx.com:user:ccd_top:1.0 - ccd_top_0
+WARNING: [BD 41-1731] Type mismatch between connected pins: /rst_ps7_0_100M/peripheral_aresetn(rst) and /ccd_top_0/rst_n(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /pclk(clk) and /ccd_top_0/pclk(undef)
+WARNING: [BD 41-1731] Type mismatch between connected pins: /xclk(clk) and /ccd_top_0/xclk(undef)
+Adding cell -- xilinx.com:ip:axi_crossbar:2.1 - xbar
+Adding cell -- xilinx.com:ip:axi_protocol_converter:2.1 - auto_pc
+Successfully read diagram <EES_335> from BD file <C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd>
+open_bd_design: Time (s): cpu = 00:00:08 ; elapsed = 00:00:10 . Memory (MB): peak = 2329.152 ; gain = 23.313
+reset_run synth_1
+WARNING: [Vivado 12-1017] Problems encountered:
+1. Failed to delete one or more files in run directory C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/synth_1
+
+generate_target all [get_files  C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd]
+INFO: [BD 41-1029] Generation completed for the IP Integrator block processing_system7_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ZigBee .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block rst_ps7_0_100M .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block RFID .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlconcat_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xadc_wiz_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block BlueTooth .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block LED_SW .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_1 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_2 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block Warning_Led .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block util_vector_logic_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_3 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block xlslice_4 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ccd_top_0 .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/xbar .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ab_coder_l .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ab_coder_r .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block servo_motor_pwm_R .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block servo_motor_pwm_L .
+INFO: [BD 41-1029] Generation completed for the IP Integrator block ps7_0_axi_periph/s00_couplers/auto_pc .
+export_ip_user_files -of_objects [get_files C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd] -no_script -sync -force -quiet
+create_ip_run [get_files -of_objects [get_fileset sources_1] C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd]
+export_simulation -of_objects [get_files C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd] -directory C:/Users/yang/Desktop/eees335/EES_335/EES_335.ip_user_files/sim_scripts -ip_user_files_dir C:/Users/yang/Desktop/eees335/EES_335/EES_335.ip_user_files -ipstatic_source_dir C:/Users/yang/Desktop/eees335/EES_335/EES_335.ip_user_files/ipstatic -lib_map_path [list {modelsim=C:/Users/yang/Desktop/eees335/EES_335/EES_335.cache/compile_simlib/modelsim} {questa=C:/Users/yang/Desktop/eees335/EES_335/EES_335.cache/compile_simlib/questa} {riviera=C:/Users/yang/Desktop/eees335/EES_335/EES_335.cache/compile_simlib/riviera} {activehdl=C:/Users/yang/Desktop/eees335/EES_335/EES_335.cache/compile_simlib/activehdl}] -use_ip_compiled_libs -force -quiet
+launch_runs impl_1 -to_step write_bitstream -jobs 8
+[Tue Oct 23 14:13:10 2018] Launched synth_1...
+Run output will be captured here: C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/synth_1/runme.log
+[Tue Oct 23 14:13:10 2018] Launched impl_1...
+Run output will be captured here: C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/runme.log
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+file copy -force C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.sysdef C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk/EES_335_wrapper.hdf
+
+launch_sdk -workspace C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk -hwspec C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk/EES_335_wrapper.hdf
+INFO: [Vivado 12-393] Launching SDK...
+INFO: [Vivado 12-417] Running xsdk -workspace C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk -hwspec C:/Users/yang/Desktop/eees335/EES_335/EES_335.sdk/EES_335_wrapper.hdf
+INFO: [Vivado 12-3157] SDK launch initiated. Please check console for any further messages.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+disconnect_hw_server localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+ERROR: [Labtoolstcl 44-494] There is no active target available for server at TCP:localhost:3121.
+ Targets(s) ", jsn3jsn4" may be locked by another hw_server.
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+connect_hw_server -url localhost:3121
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+current_hw_target [get_hw_targets */xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3]
+ERROR: [Labtoolstcl 44-199] No matching targets found on connected servers: localhost
+Resolution: If needed connect the desired target to a server and use command refresh_hw_server. Then rerun the get_hw_targets command.
+ERROR: [Common 17-39] 'get_hw_targets' failed due to earlier errors.
+disconnect_hw_server localhost:3121
+connect_hw_server
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Xilinx/USB\VID_03FD&PID_0008\5&36A3B657&0&3
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+current_hw_device [get_hw_devices xc7z010_1]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1435] Device xc7z010 (JTAG device index = 1) is not programmed (DONE status = 0).
+create_hw_cfgmem -hw_device [lindex [get_hw_devices] 1] -mem_dev [lindex [get_cfgmem_parts {s25fl256s-3.3v-qspi-x4-single}] 0]
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+open_bd_design {C:/Users/yang/Desktop/eees335/EES_335/EES_335.srcs/sources_1/bd/EES_335/EES_335.bd}
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+set_property PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7z010_1]
+set_property PROGRAM.FILE {C:/Users/yang/Desktop/eees335/EES_335/EES_335.runs/impl_1/EES_335_wrapper.bit} [get_hw_devices xc7z010_1]
+program_hw_devices [get_hw_devices xc7z010_1]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7z010_1] 0]
+INFO: [Labtools 27-1434] Device xc7z010 (JTAG device index = 1) is programmed with a design that has no supported debug core(s) in it.
+WARNING: [Labtools 27-3361] The debug hub core was not detected.
+Resolution: 
+1. Make sure the clock connected to the debug hub (dbg_hub) core is a free running clock and is active.
+2. Make sure the BSCAN_SWITCH_USER_MASK device property in Vivado Hardware Manager reflects the user scan chain setting in the design and refresh the device.  To determine the user scan chain setting in the design, open the implemented design and use 'get_property C_USER_SCAN_CHAIN [get_debug_cores dbg_hub]'.
+For more details on setting the scan chain property, consult the Vivado Debug and Programming User Guide (UG908).
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+ERROR: [Labtoolstcl 44-140] Invalid option value, specified for 'hw_target'.
+exit
+INFO: [Common 17-206] Exiting Vivado at Tue Oct 23 15:39:09 2018...

@@ -1,0 +1,119 @@
+16:50:45 **** Auto Build of configuration Debug for project motor ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/emio_initial.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/emio_initial.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/emio_initial.d" -MT"src/emio_initial.o" -o "src/emio_initial.o" "../src/emio_initial.c"
+'Finished building: ../src/emio_initial.c'
+' '
+'Building file: ../src/i2c_ctr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/i2c_ctr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/i2c_ctr.d" -MT"src/i2c_ctr.o" -o "src/i2c_ctr.o" "../src/i2c_ctr.c"
+'Finished building: ../src/i2c_ctr.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+../src/main.c:19:29: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define DDR_BASEADDR        0x30000000
+                             ^
+../src/main.c:30:25: note: in expansion of macro 'DDR_BASEADDR'
+ #define VIDEO_BASEADDR0 DDR_BASEADDR + 0x2000000
+                         ^~~~~~~~~~~~
+../src/main.c:35:10: note: in expansion of macro 'VIDEO_BASEADDR0'
+ u8* p0 = VIDEO_BASEADDR0;
+          ^~~~~~~~~~~~~~~
+../src/main.c:19:29: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define DDR_BASEADDR        0x30000000
+                             ^
+../src/main.c:31:25: note: in expansion of macro 'DDR_BASEADDR'
+ #define VIDEO_BASEADDR1 DDR_BASEADDR + 0x3000000
+                         ^~~~~~~~~~~~
+../src/main.c:36:10: note: in expansion of macro 'VIDEO_BASEADDR1'
+ u8* p1 = VIDEO_BASEADDR1;
+          ^~~~~~~~~~~~~~~
+../src/main.c:19:29: warning: initialization makes pointer from integer without a cast [-Wint-conversion]
+ #define DDR_BASEADDR        0x30000000
+                             ^
+../src/main.c:32:25: note: in expansion of macro 'DDR_BASEADDR'
+ #define VIDEO_BASEADDR2 DDR_BASEADDR + 0x4000000
+                         ^~~~~~~~~~~~
+../src/main.c:37:10: note: in expansion of macro 'VIDEO_BASEADDR2'
+ u8* p2 = VIDEO_BASEADDR2;
+          ^~~~~~~~~~~~~~~
+../src/main.c: In function 'hls':
+../src/main.c:56:2: warning: implicit declaration of function 'ov5640_init_rgb' [-Wimplicit-function-declaration]
+  ov5640_init_rgb();
+  ^~~~~~~~~~~~~~~
+../src/main.c:52:5: warning: unused variable 'val2' [-Wunused-variable]
+  u8 val2;
+     ^~~~
+../src/main.c:51:6: warning: unused variable 'val1' [-Wunused-variable]
+  u8  val1;
+      ^~~~
+../src/main.c:49:6: warning: unused variable 'val' [-Wunused-variable]
+  u32 val;
+      ^~~
+../src/main.c:47:6: warning: unused variable 'Status' [-Wunused-variable]
+  u32 Status;
+      ^~~~~~
+../src/main.c:46:8: warning: unused variable 'j' [-Wunused-variable]
+  int i,j;
+        ^
+../src/main.c:46:6: warning: unused variable 'i' [-Wunused-variable]
+  int i,j;
+      ^
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/ov5640_config.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/ov5640_config.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/ov5640_config.d" -MT"src/ov5640_config.o" -o "src/ov5640_config.o" "../src/ov5640_config.c"
+'Finished building: ../src/ov5640_config.c'
+' '
+'Building file: ../src/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/platform.d" -MT"src/platform.o" -o "src/platform.o" "../src/platform.c"
+'Finished building: ../src/platform.c'
+' '
+'Building file: ../src/sys_intr.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sys_intr.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sys_intr.d" -MT"src/sys_intr.o" -o "src/sys_intr.o" "../src/sys_intr.c"
+'Finished building: ../src/sys_intr.c'
+' '
+'Building file: ../src/vdma_api.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/vdma_api.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/vdma_api.d" -MT"src/vdma_api.o" -o "src/vdma_api.o" "../src/vdma_api.c"
+'Finished building: ../src/vdma_api.c'
+' '
+'Building file: ../src/zrcar.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/zrcar.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../motor_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/zrcar.d" -MT"src/zrcar.o" -o "src/zrcar.o" "../src/zrcar.c"
+../src/zrcar.c: In function 'main':
+../src/zrcar.c:75:2: warning: implicit declaration of function 'printf' [-Wimplicit-function-declaration]
+  printf("l_speed =%5d  ",Xil_In32(WHEEL_CTRL_LA_BASEADDR+WHEEL_SPEED_GET_OFFSET));
+  ^~~~~~
+../src/zrcar.c:75:2: warning: incompatible implicit declaration of built-in function 'printf'
+../src/zrcar.c:75:2: note: include '<stdio.h>' or provide a declaration of 'printf'
+../src/zrcar.c:75:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("l_speed =%5d  ",Xil_In32(WHEEL_CTRL_LA_BASEADDR+WHEEL_SPEED_GET_OFFSET));
+                     ^
+../src/zrcar.c:76:21: warning: format '%d' expects argument of type 'int', but argument 2 has type 'u32 {aka long unsigned int}' [-Wformat=]
+  printf("r_speed =%5d\r\n",Xil_In32(WHEEL_CTRL_RF_BASEADDR+WHEEL_SPEED_GET_OFFSET));
+                     ^
+'Finished building: ../src/zrcar.c'
+' '
+'Building target: motor.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../motor_bsp/ps7_cortexa9_0/lib -o "motor.elf"  ./src/emio_initial.o ./src/i2c_ctr.o ./src/main.o ./src/ov5640_config.o ./src/platform.o ./src/sys_intr.o ./src/vdma_api.o ./src/zrcar.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: motor.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size motor.elf  |tee "motor.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  91588	   4300	  40128	 136016	  21350	motor.elf
+'Finished building: motor.elf.size'
+' '
+
+16:50:50 Build Finished (took 5s.174ms)
+
