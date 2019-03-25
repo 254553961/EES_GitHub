@@ -1,4 +1,0 @@
-INFO: [VRFC 10-2263] Analyzing Verilog file "e:/ees_351/ees_351_selftest/ees_351_selftest.ip_user_files/xilinx.com_user_but_led_1.0/but_led.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module but_led
-INFO: [VRFC 10-2263] Analyzing Verilog file "e:/Artix/temp/tb_gpio.v" into library xil_defaultlib
-INFO: [VRFC 10-311] analyzing module tb_gpio

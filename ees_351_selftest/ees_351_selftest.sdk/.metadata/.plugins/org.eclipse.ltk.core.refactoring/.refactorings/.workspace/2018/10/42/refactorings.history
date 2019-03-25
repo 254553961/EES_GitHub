@@ -1,3 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<session version="1.0">&#x0A;<refactoring comment="Delete resource &apos;ees351_selftest/src/sd_xilffs_demo&apos;" deleteContents="false" description="Delete resource &apos;ees351_selftest/src/sd_xilffs_demo&apos;" element1="/ees351_selftest/src/sd_xilffs_demo" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1540005568689"/>&#x0A;<refactoring comment="Delete resource &apos;ees351_selftest/src/helloworld.c&apos;" deleteContents="false" description="Delete resource &apos;ees351_selftest/src/helloworld.c&apos;" element1="/ees351_selftest/src/helloworld.c" flags="7" id="org.eclipse.ltk.core.refactoring.delete.resources" resources="1" stamp="1540005657660"/>
-</session>
