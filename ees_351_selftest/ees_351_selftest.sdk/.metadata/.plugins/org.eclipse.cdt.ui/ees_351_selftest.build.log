@@ -1,0 +1,38 @@
+14:20:11 **** Auto Build of configuration Debug for project ees_351_selftest ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/pl_uart_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pl_uart_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../ees_351_selftest_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pl_uart_test.d" -MT"src/pl_uart_test.o" -o "src/pl_uart_test.o" "../src/pl_uart_test.c"
+../src/pl_uart_test.c: In function 'pl_uart_test':
+../src/pl_uart_test.c:120:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+../src/pl_uart_test.c: In function 'UartLitePolledExample':
+../src/pl_uart_test.c:161:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/pl_uart_test.c:160:15: warning: unused variable 'ReceivedCount' [-Wunused-variable]
+  unsigned int ReceivedCount = 0;
+               ^~~~~~~~~~~~~
+../src/pl_uart_test.c: In function 'pl_uart_test':
+../src/pl_uart_test.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/pl_uart_test.c'
+' '
+'Building target: ees_351_selftest.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../ees_351_selftest_bsp/ps7_cortexa9_0/lib -o "ees_351_selftest.elf"  ./src/usb_demo/xusbps_ch9.o ./src/usb_demo/xusbps_ch9_storage.o ./src/usb_demo/xusbps_class_storage.o ./src/usb_demo/xusbps_intr_example.o  ./src/sd_xilffs_demo/sd_xilffs_demo.o  ./src/mem_demo/memory_config_g.o ./src/mem_demo/memorytest.o ./src/mem_demo/platform.o  ./src/lwip_demo/echo.o ./src/lwip_demo/i2c_access.o ./src/lwip_demo/iic_phyreset.o ./src/lwip_demo/lwip_demo.o ./src/lwip_demo/platform.o ./src/lwip_demo/platform_mb.o ./src/lwip_demo/platform_ppc.o ./src/lwip_demo/platform_zynq.o ./src/lwip_demo/platform_zynqmp.o ./src/lwip_demo/sfp.o ./src/lwip_demo/si5324.o  ./src/dac_demo/dac_demo.o  ./src/audio/adau1761.o ./src/audio/iic.o ./src/audio/test_audio.o  ./src/common_uart.o ./src/gpio_test.o ./src/main.o ./src/pl_uart_test.o ./src/platform.o ./src/xadcps_polled_printf_example.o ./src/xqspips_flash_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: ees_351_selftest.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size ees_351_selftest.elf  |tee "ees_351_selftest.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 172600	   4132	3201328	3378060	 338b8c	ees_351_selftest.elf
+'Finished building: ees_351_selftest.elf.size'
+' '
+
+14:20:13 Build Finished (took 1s.205ms)
+

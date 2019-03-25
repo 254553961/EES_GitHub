@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2017.4 (64-bit)
+# SW Build 2086221 on Fri Dec 15 20:55:39 MST 2017
+# IP Build 2085800 on Fri Dec 15 22:25:07 MST 2017
+# Start of session at: Sat Oct 20 10:51:22 2018
+# Process ID: 14424
+# Current directory: e:/ees_351/ees_351_selftest/ees_351_selftest.tmp/but_led_v1_0_project/but_led_v1_0_project.sim/sim_1/behav/xsim
+# Command line: wbtcv.exe -mode batch -source e:/ees_351/ees_351_selftest/ees_351_selftest.tmp/but_led_v1_0_project/but_led_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/tb_gpio_behav/webtalk/xsim_webtalk.tcl -notrace
+# Log file: e:/ees_351/ees_351_selftest/ees_351_selftest.tmp/but_led_v1_0_project/but_led_v1_0_project.sim/sim_1/behav/xsim/webtalk.log
+# Journal file: e:/ees_351/ees_351_selftest/ees_351_selftest.tmp/but_led_v1_0_project/but_led_v1_0_project.sim/sim_1/behav/xsim\webtalk.jou
+#-----------------------------------------------------------
+source e:/ees_351/ees_351_selftest/ees_351_selftest.tmp/but_led_v1_0_project/but_led_v1_0_project.sim/sim_1/behav/xsim/xsim.dir/tb_gpio_behav/webtalk/xsim_webtalk.tcl -notrace

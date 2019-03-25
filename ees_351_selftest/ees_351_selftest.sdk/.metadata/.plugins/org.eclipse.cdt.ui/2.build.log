@@ -1,0 +1,224 @@
+17:29:40 **** Auto Build of configuration Debug for project 2 ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/usb_demo/xusbps_ch9.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/usb_demo/xusbps_ch9.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/usb_demo/xusbps_ch9.d" -MT"src/usb_demo/xusbps_ch9.o" -o "src/usb_demo/xusbps_ch9.o" "../src/usb_demo/xusbps_ch9.c"
+'Finished building: ../src/usb_demo/xusbps_ch9.c'
+' '
+'Building file: ../src/usb_demo/xusbps_ch9_storage.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/usb_demo/xusbps_ch9_storage.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/usb_demo/xusbps_ch9_storage.d" -MT"src/usb_demo/xusbps_ch9_storage.o" -o "src/usb_demo/xusbps_ch9_storage.o" "../src/usb_demo/xusbps_ch9_storage.c"
+'Finished building: ../src/usb_demo/xusbps_ch9_storage.c'
+' '
+'Building file: ../src/usb_demo/xusbps_class_storage.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/usb_demo/xusbps_class_storage.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/usb_demo/xusbps_class_storage.d" -MT"src/usb_demo/xusbps_class_storage.o" -o "src/usb_demo/xusbps_class_storage.o" "../src/usb_demo/xusbps_class_storage.c"
+'Finished building: ../src/usb_demo/xusbps_class_storage.c'
+' '
+'Building file: ../src/usb_demo/xusbps_intr_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/usb_demo/xusbps_intr_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/usb_demo/xusbps_intr_example.d" -MT"src/usb_demo/xusbps_intr_example.o" -o "src/usb_demo/xusbps_intr_example.o" "../src/usb_demo/xusbps_intr_example.c"
+'Finished building: ../src/usb_demo/xusbps_intr_example.c'
+' '
+'Building file: ../src/sd_xilffs_demo/sd_xilffs_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/sd_xilffs_demo/sd_xilffs_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/sd_xilffs_demo/sd_xilffs_demo.d" -MT"src/sd_xilffs_demo/sd_xilffs_demo.o" -o "src/sd_xilffs_demo/sd_xilffs_demo.o" "../src/sd_xilffs_demo/sd_xilffs_demo.c"
+../src/sd_xilffs_demo/sd_xilffs_demo.c: In function 'sd_xilffs_demo':
+../src/sd_xilffs_demo/sd_xilffs_demo.c:115:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/sd_xilffs_demo/sd_xilffs_demo.c'
+' '
+'Building file: ../src/mem_demo/memorytest.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mem_demo/memorytest.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mem_demo/memorytest.d" -MT"src/mem_demo/memorytest.o" -o "src/mem_demo/memorytest.o" "../src/mem_demo/memorytest.c"
+'Finished building: ../src/mem_demo/memorytest.c'
+' '
+'Building file: ../src/mem_demo/platform.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/mem_demo/platform.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/mem_demo/platform.d" -MT"src/mem_demo/platform.o" -o "src/mem_demo/platform.o" "../src/mem_demo/platform.c"
+'Finished building: ../src/mem_demo/platform.c'
+' '
+'Building file: ../src/lwip_demo/echo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/echo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/echo.d" -MT"src/lwip_demo/echo.o" -o "src/lwip_demo/echo.o" "../src/lwip_demo/echo.c"
+'Finished building: ../src/lwip_demo/echo.c'
+' '
+'Building file: ../src/lwip_demo/i2c_access.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/i2c_access.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/i2c_access.d" -MT"src/lwip_demo/i2c_access.o" -o "src/lwip_demo/i2c_access.o" "../src/lwip_demo/i2c_access.c"
+'Finished building: ../src/lwip_demo/i2c_access.c'
+' '
+'Building file: ../src/lwip_demo/iic_phyreset.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/iic_phyreset.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/iic_phyreset.d" -MT"src/lwip_demo/iic_phyreset.o" -o "src/lwip_demo/iic_phyreset.o" "../src/lwip_demo/iic_phyreset.c"
+'Finished building: ../src/lwip_demo/iic_phyreset.c'
+' '
+'Building file: ../src/lwip_demo/lwip_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/lwip_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/lwip_demo.d" -MT"src/lwip_demo/lwip_demo.o" -o "src/lwip_demo/lwip_demo.o" "../src/lwip_demo/lwip_demo.c"
+'Finished building: ../src/lwip_demo/lwip_demo.c'
+' '
+'Building file: ../src/lwip_demo/platform_zynq.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/platform_zynq.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/platform_zynq.d" -MT"src/lwip_demo/platform_zynq.o" -o "src/lwip_demo/platform_zynq.o" "../src/lwip_demo/platform_zynq.c"
+'Finished building: ../src/lwip_demo/platform_zynq.c'
+' '
+'Building file: ../src/lwip_demo/platform_zynqmp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/platform_zynqmp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/platform_zynqmp.d" -MT"src/lwip_demo/platform_zynqmp.o" -o "src/lwip_demo/platform_zynqmp.o" "../src/lwip_demo/platform_zynqmp.c"
+'Finished building: ../src/lwip_demo/platform_zynqmp.c'
+' '
+'Building file: ../src/lwip_demo/sfp.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/sfp.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/sfp.d" -MT"src/lwip_demo/sfp.o" -o "src/lwip_demo/sfp.o" "../src/lwip_demo/sfp.c"
+'Finished building: ../src/lwip_demo/sfp.c'
+' '
+'Building file: ../src/lwip_demo/si5324.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/lwip_demo/si5324.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/lwip_demo/si5324.d" -MT"src/lwip_demo/si5324.o" -o "src/lwip_demo/si5324.o" "../src/lwip_demo/si5324.c"
+'Finished building: ../src/lwip_demo/si5324.c'
+' '
+'Building file: ../src/dac0832/dac0832.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/dac0832/dac0832.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/dac0832/dac0832.d" -MT"src/dac0832/dac0832.o" -o "src/dac0832/dac0832.o" "../src/dac0832/dac0832.c"
+'Finished building: ../src/dac0832/dac0832.c'
+' '
+'Building file: ../src/audio_demo/adau1761.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio_demo/adau1761.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio_demo/adau1761.d" -MT"src/audio_demo/adau1761.o" -o "src/audio_demo/adau1761.o" "../src/audio_demo/adau1761.c"
+../src/audio_demo/adau1761.c: In function 'filter_or_bypass_input':
+../src/audio_demo/adau1761.c:210:19: warning: unused variable 'Sample_R' [-Wunused-variable]
+  Xint16 Sample_L, Sample_R;
+                   ^~~~~~~~
+../src/audio_demo/adau1761.c:210:9: warning: unused variable 'Sample_L' [-Wunused-variable]
+  Xint16 Sample_L, Sample_R;
+         ^~~~~~~~
+'Finished building: ../src/audio_demo/adau1761.c'
+' '
+'Building file: ../src/audio_demo/audio_demo.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio_demo/audio_demo.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio_demo/audio_demo.d" -MT"src/audio_demo/audio_demo.o" -o "src/audio_demo/audio_demo.o" "../src/audio_demo/audio_demo.c"
+../src/audio_demo/audio_demo.c: In function 'audio_demo_1':
+../src/audio_demo/audio_demo.c:59:4: warning: implicit declaration of function 'filter_or_bypass_input' [-Wimplicit-function-declaration]
+    filter_or_bypass_input(InstancePtr);
+    ^~~~~~~~~~~~~~~~~~~~~~
+../src/audio_demo/audio_demo.c:33:9: warning: unused variable 'audio_data' [-Wunused-variable]
+  Xint16 audio_data;
+         ^~~~~~~~~~
+../src/audio_demo/audio_demo.c:31:6: warning: unused variable 'sw_check' [-Wunused-variable]
+  int sw_check;
+      ^~~~~~~~
+../src/audio_demo/audio_demo.c: In function 'audio_demo_2':
+../src/audio_demo/audio_demo.c:86:9: warning: unused variable 'audio_data' [-Wunused-variable]
+  Xint16 audio_data;
+         ^~~~~~~~~~
+../src/audio_demo/audio_demo.c:84:6: warning: unused variable 'sw_check' [-Wunused-variable]
+  int sw_check;
+      ^~~~~~~~
+'Finished building: ../src/audio_demo/audio_demo.c'
+' '
+'Building file: ../src/audio_demo/iic.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/audio_demo/iic.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/audio_demo/iic.d" -MT"src/audio_demo/iic.o" -o "src/audio_demo/iic.o" "../src/audio_demo/iic.c"
+'Finished building: ../src/audio_demo/iic.c'
+' '
+'Building file: ../src/common_uart.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/common_uart.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/common_uart.d" -MT"src/common_uart.o" -o "src/common_uart.o" "../src/common_uart.c"
+'Finished building: ../src/common_uart.c'
+' '
+'Building file: ../src/gpio_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/gpio_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/gpio_test.d" -MT"src/gpio_test.o" -o "src/gpio_test.o" "../src/gpio_test.c"
+../src/gpio_test.c: In function 'gpio_test':
+../src/gpio_test.c:64:9: warning: unused variable 'Output_Pin' [-Wunused-variable]
+     int Output_Pin=8;
+         ^~~~~~~~~~
+../src/gpio_test.c:62:36: warning: unused variable 'gettemp4' [-Wunused-variable]
+     int gettemp1,gettemp2,gettemp3,gettemp4,tst_on,tst_off;
+                                    ^~~~~~~~
+../src/gpio_test.c:62:27: warning: unused variable 'gettemp3' [-Wunused-variable]
+     int gettemp1,gettemp2,gettemp3,gettemp4,tst_on,tst_off;
+                           ^~~~~~~~
+'Finished building: ../src/gpio_test.c'
+' '
+'Building file: ../src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:51:0:
+../src/common_uart.h:16:0: warning: "UART_DEVICE_ID" redefined
+ #define UART_DEVICE_ID              XPAR_XUARTPS_0_DEVICE_ID
+ 
+In file included from ../src/platform.h:36:0,
+                 from ../src/main.c:49:
+../src/platform_config.h:5:0: note: this is the location of the previous definition
+ #define UART_DEVICE_ID 0
+ 
+../src/main.c: In function 'main':
+../src/main.c:87:21: warning: implicit declaration of function 'pl_uart_test' [-Wimplicit-function-declaration]
+          case '2' : pl_uart_test();      break;
+                     ^~~~~~~~~~~~
+../src/main.c:88:21: warning: implicit declaration of function 'audio_demo_1' [-Wimplicit-function-declaration]
+          case '3' : audio_demo_1(&Uart_PS);      break;
+                     ^~~~~~~~~~~~
+../src/main.c:89:21: warning: implicit declaration of function 'audio_demo_2' [-Wimplicit-function-declaration]
+          case '4' : audio_demo_2(&Uart_PS);      break;
+                     ^~~~~~~~~~~~
+../src/main.c:90:21: warning: implicit declaration of function 'dac0832_test' [-Wimplicit-function-declaration]
+          case '5' : dac0832_test (&Uart_PS);   break;
+                     ^~~~~~~~~~~~
+../src/main.c:93:21: warning: implicit declaration of function 'XADC_demo' [-Wimplicit-function-declaration]
+          case '8' : XADC_demo();     break;
+                     ^~~~~~~~~
+../src/main.c:94:21: warning: implicit declaration of function 'gpio_test' [-Wimplicit-function-declaration]
+          case '9' : gpio_test();     break;
+                     ^~~~~~~~~
+'Finished building: ../src/main.c'
+' '
+'Building file: ../src/pl_uart_test.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/pl_uart_test.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/pl_uart_test.d" -MT"src/pl_uart_test.o" -o "src/pl_uart_test.o" "../src/pl_uart_test.c"
+../src/pl_uart_test.c: In function 'pl_uart_test':
+../src/pl_uart_test.c:120:6: warning: variable 'Status' set but not used [-Wunused-but-set-variable]
+  int Status;
+      ^~~~~~
+../src/pl_uart_test.c: In function 'UartLitePolledExample':
+../src/pl_uart_test.c:161:6: warning: unused variable 'Index' [-Wunused-variable]
+  int Index;
+      ^~~~~
+../src/pl_uart_test.c:160:15: warning: unused variable 'ReceivedCount' [-Wunused-variable]
+  unsigned int ReceivedCount = 0;
+               ^~~~~~~~~~~~~
+../src/pl_uart_test.c: In function 'pl_uart_test':
+../src/pl_uart_test.c:128:1: warning: control reaches end of non-void function [-Wreturn-type]
+ }
+ ^
+'Finished building: ../src/pl_uart_test.c'
+' '
+'Building file: ../src/xadcps_polled_printf_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xadcps_polled_printf_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xadcps_polled_printf_example.d" -MT"src/xadcps_polled_printf_example.o" -o "src/xadcps_polled_printf_example.o" "../src/xadcps_polled_printf_example.c"
+'Finished building: ../src/xadcps_polled_printf_example.c'
+' '
+'Building file: ../src/xqspips_flash_polled_example.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/xqspips_flash_polled_example.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../2_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/xqspips_flash_polled_example.d" -MT"src/xqspips_flash_polled_example.o" -o "src/xqspips_flash_polled_example.o" "../src/xqspips_flash_polled_example.c"
+'Finished building: ../src/xqspips_flash_polled_example.c'
+' '
+'Building target: 2.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../2_bsp/ps7_cortexa9_0/lib -o "2.elf"  ./src/usb_demo/xusbps_ch9.o ./src/usb_demo/xusbps_ch9_storage.o ./src/usb_demo/xusbps_class_storage.o ./src/usb_demo/xusbps_intr_example.o  ./src/sd_xilffs_demo/sd_xilffs_demo.o  ./src/mem_demo/memory_config_g.o ./src/mem_demo/memorytest.o ./src/mem_demo/platform.o  ./src/lwip_demo/echo.o ./src/lwip_demo/i2c_access.o ./src/lwip_demo/iic_phyreset.o ./src/lwip_demo/lwip_demo.o ./src/lwip_demo/platform.o ./src/lwip_demo/platform_mb.o ./src/lwip_demo/platform_ppc.o ./src/lwip_demo/platform_zynq.o ./src/lwip_demo/platform_zynqmp.o ./src/lwip_demo/sfp.o ./src/lwip_demo/si5324.o  ./src/dac0832/dac0832.o  ./src/audio_demo/adau1761.o ./src/audio_demo/audio_demo.o ./src/audio_demo/iic.o  ./src/common_uart.o ./src/gpio_test.o ./src/main.o ./src/pl_uart_test.o ./src/platform.o ./src/xadcps_polled_printf_example.o ./src/xqspips_flash_polled_example.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxilffs,-lxil,-lgcc,-lc,--end-group -Wl,--start-group,-lxil,-llwip4,-lgcc,-lc,--end-group
+'Finished building target: 2.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size 2.elf  |tee "2.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 181216	   4140	3201312	3386668	 33ad2c	2.elf
+'Finished building: 2.elf.size'
+' '
+
+17:29:48 Build Finished (took 7s.987ms)
+
