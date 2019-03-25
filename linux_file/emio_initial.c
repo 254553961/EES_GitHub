@@ -1,7 +1,7 @@
 /*
  * emio_initial.c
  *
- *  Created on: 2016Äê10ÔÂ22ÈÕ
+ *  Created on: 2016å¹´10æœˆ22æ—¥
  *      Author: Administrator
  */
 
