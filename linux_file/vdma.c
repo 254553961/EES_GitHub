@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <sys/types.h>
 #include <unistd.h>
-#include <sys/stat.h> 
+#include <sys/stat.h>
 #include "xil_io.h"
 #include <errno.h>
 #include <signal.h>
@@ -55,9 +55,9 @@ int main()
     char sync_frame0[]="frame0 sync data";
     char sync_frame1[]="frame1 sync data";
     char sync_frame2[]="frame2 sync data";
-    
-    
-	
+
+    udp_srv_open
+
 
     //mmap返回三帧图像的虚拟地址
     void        *ptr_map_frame0;
@@ -81,10 +81,10 @@ int main()
     //对齐到页（4096）的整倍数，mmap（）要求的，
     offset_map_Npage_frame0    = (VIDEO_BASEADDR0 & ~(page_size-1));//为了保证是page(4096)的整倍数，采用减小基址到最接近4096的倍数方式，可能起始地址就要多包含一部分偏移数据。
     offset_map_ptr_frame0  = VIDEO_BASEADDR0 - offset_map_Npage_frame0;//真正有效的数据偏移地址，减掉多出来的地址。后面起始地址要加这个偏差值
-    
+
     offset_map_Npage_frame1    = (VIDEO_BASEADDR1 & ~(page_size-1));//为了保证是page(4096)的整倍数，采用减小基址到最接近4096的倍数方式，可能起始地址就要多包含一部分偏移数据。
     offset_map_ptr_frame1  = VIDEO_BASEADDR1 - offset_map_Npage_frame1;
-    
+
     offset_map_Npage_frame2    = (VIDEO_BASEADDR2 & ~(page_size-1));//为了保证是page(4096)的整倍数，采用减小基址到最接近4096的倍数方式，可能起始地址就要多包含一部分偏移数据。
     offset_map_ptr_frame2  = VIDEO_BASEADDR2 - offset_map_Npage_frame2;
 
@@ -97,19 +97,19 @@ int main()
    zrcar_wheel_init();
    // Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-50));
    // Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (50));
-     
+
 
   start_vdma();
-    
+
 while (1){
 //      printf("fram  = %8x\r\n",Xil_In32(VDMA_BASEADDR + 0x028));
 		if((Xil_In32(VDMA_BASEADDR + 0x028) & 0xff000000)==0x00000000){
 			usleep(1);
 		 	// park number
 			leastSquares(ptr_map_frame2);
-      
-			Xil_Out32((VDMA_BASEADDR + 0x028), 0x02); 
-     
+
+			Xil_Out32((VDMA_BASEADDR + 0x028), 0x02);
+
 		}
 		while((Xil_In32(VDMA_BASEADDR + 0x028) & 0xff000000)==0x00000000);
 
@@ -123,8 +123,8 @@ while (1){
 		if((Xil_In32(VDMA_BASEADDR + 0x028) & 0xff000000)==0x02000000){
 			usleep(1);
 			leastSquares(ptr_map_frame1);
-			
-      
+
+
      	Xil_Out32((VDMA_BASEADDR + 0x028), 0x01);
 		}
 		while((Xil_In32(VDMA_BASEADDR + 0x028) & 0xff000000)==0x02000000);
@@ -143,13 +143,13 @@ while (1){
    sleep(3);
    */
 	};
- 
+
      return 0;
 }
 
 void start_vdma(void)
 {
-  
+
 	/*****************往DDR写数据设置**********************/
 	Xil_Out32((VDMA_BASEADDR + 0x030), 0x00000004);// enable circular mode
 	Xil_Out32((VDMA_BASEADDR + 0x030), 0x0000008b);// enable circular mode
@@ -160,7 +160,7 @@ void start_vdma(void)
 	Xil_Out32((VDMA_BASEADDR + 0x0A4), (H_ACTIVE*3));		// h size (640 * 4) bytes
 	Xil_Out32((VDMA_BASEADDR + 0x0A0), V_ACTIVE);			// v size (480)
 	/*****************从DDR读数据设置**********************/
-  
+
 	//Xil_Out32((VDMA_BASEADDR + 0x000), 0x00000004); 		// enable circular mode
 	Xil_Out32((VDMA_BASEADDR + 0x000), 0x0000008b); 		// enable circular mode
 	Xil_Out32((VDMA_BASEADDR + 0x05c), VIDEO_BASEADDR0); 	// start address
@@ -168,10 +168,10 @@ void start_vdma(void)
 	Xil_Out32((VDMA_BASEADDR + 0x064), VIDEO_BASEADDR2); 	// start address
 	Xil_Out32((VDMA_BASEADDR + 0x058), (H_STRIDE*3)); 		// h offset (640 * 4) bytes
 	Xil_Out32((VDMA_BASEADDR + 0x054), (H_ACTIVE*3)); 		// h size (640 * 4) bytes
-	Xil_Out32((VDMA_BASEADDR + 0x050), V_ACTIVE); 
+	Xil_Out32((VDMA_BASEADDR + 0x050), V_ACTIVE);
    sleep(3);
   ov5640_init_rgb();
-  
+
 }
 
 int zrcar_wheel_init()
@@ -201,7 +201,7 @@ int zrcar_wheel_init()
 
     Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_RESET_OFFSET, (0)); //in_module_reset
     Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_RESET_OFFSET, (0x0ff)); //in_module_reset
-    //Control reg 
+    //Control reg
     // bit 0 : in_module_en
     // bit 1 : in_fwd_dir
     // *    if in_fwd_dir == 1 out_w_PWMdir = pid_out_sign
@@ -223,7 +223,7 @@ void leastSquares(void *ptr)
 	for( i=0; i< 240; i++){
 		for(j=0; j<427; j++){
 			u_char a = *(u_char *)(ptr + j*3*3 + i*1280*3*3);
-          
+
 			u_char b = *(u_char *)(ptr+ (j+1)*3*3 + i*1280*3*3);
 			if((a==255)&&(b==0)){
 				*(coordinate_x+numbytes)= j;
@@ -250,17 +250,17 @@ void leastSquares(void *ptr)
 	sum_x2 = 0;
 	sum_y = 0;
 	sum_x = 0;
-	sum_xy = 0; 
+	sum_xy = 0;
 	printf("a = %3f\n\r",a);
-//    printf("b = %3f\n\r",b); 
+//    printf("b = %3f\n\r",b);
 //    printf("num = %3d\n\r",numbytes);
-	printf("b/a = %5f\n\r",-(b/a)); 
+	printf("b/a = %5f\n\r",-(b/a));
     motorControl(-((b/a)));
-	
+
 }
 void motorControl(float intercept)
 {
-  
+
 	if((intercept>200)&(intercept<=230)){
    Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (30));
    Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-70));
@@ -268,11 +268,11 @@ void motorControl(float intercept)
 	}
 	if((intercept>150)&(intercept<=200)){
    Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (35));
-   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-65));	
+   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-65));
 	}
 	if((intercept>100)&(intercept<=150)){
 	   Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (40));
-   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-60));		
+   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-60));
 	}
 	if((intercept>50)&(intercept<=100)){
 	 Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (47));
@@ -296,11 +296,11 @@ void motorControl(float intercept)
 	}
 	if((intercept>-150)&(intercept<=-100)){
 	   Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (60));
-   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-40));	
+   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-40));
 	}
    	if((intercept>-200)&(intercept<=-150)){
 	   Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (65));
-   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-35));	
+   Xil_Out32((WHEEL_CTRL_R_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (-35));
 	}
 	if((intercept>=-220)&(intercept<=-200)){
 	   Xil_Out32((WHEEL_CTRL_L_BASEADDR) + WHEEL_SPEED_SET_OFFSET, (70));
@@ -309,4 +309,3 @@ void motorControl(float intercept)
    printf("l_speed = %3d\n\r",Xil_In32(WHEEL_CTRL_L_BASEADDR+WHEEL_SPEED_GET_OFFSET));
    printf("r_speed = %3d\n\r",Xil_In32(WHEEL_CTRL_R_BASEADDR+WHEEL_SPEED_GET_OFFSET));
 }
-
